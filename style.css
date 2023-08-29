@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    
 }
 
 .container{
@@ -11,15 +12,26 @@
     width: 100%;
     background: linear-gradient(
         45deg,
-        #ff7bca,
-        #d55de3,
-        #d20fe4,
-        #ff7bca
+        #953b71,
+        #a58fa7,
+        #666566,
+        #510733
     );
     background-size: 150%;
     animation: color 3s ease-in-out infinite alternate;
 }
 
+@keyframes color{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
 .container .header{
     display: flex;
     align-items: center;
@@ -37,25 +49,115 @@
     text-align: center;
 }
 
-.container .header .logo{
+.container .middle1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 70%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* text-align: left; */
+    /* font-size: xx-large; */
+}
+
+.container .middle1 img{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    top: -110px;
+    left: 920px;
+    /* transform: translate(0%, 0%); */
+    font-size: 2rem;
+}
+
+.container .middle1 h1{
+    font-size: 4.5rem;
+    font-family: 'Mukta', sans-serif;
+    text-align: left;
+    letter-spacing: 5px;
+    position: relative; 
+    top: 0%;
+    left: 100px
+}
+
+.container .middle1 p{
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+    text-align: left;
+    letter-spacing: 2px;
+    position: relative; 
+    top: 0%;
+    left: 100px
+}
+
+.container .middle1 .btn{
     position: relative;
     top: 0%;
-    left: 0%;
+    left: -440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container .header img{
+    position: absolute;
+    height: 200px;
+    width: 20px;
+    top: -100px;
+    left: 0px;
     transform: translate(0%, 0%);
     font-size: 2rem;
 
 }
 
+.container p{
+    font-size: 2rem;
+    font-family: 'Mukta', sans-serif;
+} */
 
-
-@keyframes color{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 50% 100%;
-    }
-    100%{
-        background-position: 100% 0%;
-    }
-}
