@@ -9,11 +9,14 @@ function btnarrow() {
     e2.removeAttribute("hidden");
     e3.removeAttribute("hidden");
     e4.removeAttribute("hidden");
+    e1.innerHTML = "Tech Links<span class='material-icons'>chevron_left</span>";
+    e1.style.width="93.1px";
     // e1.style.display="none";
     
 } else {
     // e1.style.display="flex";
-    // e1.innerHTML = "<span class='material-icons'>arrow_backward_ios</span>";
+    e1.innerHTML = "Tech Links<span class='material-icons'>chevron_right</span>";
+    // e1.style.width="93.1px";
     e2.setAttribute("hidden", "true");
     e3.setAttribute("hidden", "true");
     e4.setAttribute("hidden", "true");
