@@ -9,13 +9,14 @@
     <link  type="text/css" rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script defer src="script.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="nav about">About</div>
+            <div class="nav about" onclick="scrollToSection1()">About</div>
             <!-- <div class="nav about">About</div> -->
-            <div class="nav education">Education</div>
+            <div class="nav education" onclick="scrollToSection2()">Education</div>
             <div class="nav skills">Skills</div>
             <div class="nav exp">Experience</div>
             <div class="nav projects">Projects</div>
@@ -24,9 +25,9 @@
         <div class="middle1">
             <img src="mypic.jpeg" alt="Sneha Gupta">
             <h1>Hi! I'm Sneha Gupta</h1>
-            <p>Hello Folks! Welcome to my Portifolio. I am an undergraduate <br> student with innovative team player skills looking to work with <br>
-                 an organisation that will help me to grow my technical skills <br> and professional development.
-            Looking for SDE and Web <br> development roles. Currently learning and refining JS and its <br> frameworks.</p>
+            <p>Hello Folks! Welcome to my Portifolio. I am an undergraduate student <br> with innovative team player skills looking to work with
+                 an organisation <br> that will help me to grow my technical skills and professional development.<br>
+            Looking for SDE and Web development roles. Currently learning and <br> refining JS and its frameworks.</p>
             <div class="btn">
                 <a href="https://drive.google.com/file/d/14jhJOGNMiGz2851o7DWJEaTQwKLL4xuj/view?usp=sharing"><button class="btn1">Download Resume</button></a>
                 <button class="btnarr" onclick="btnarrow()">Tech Links<span class="material-icons">chevron_right</span></button>
@@ -49,27 +50,132 @@
             <div class="sc1"></div>
             <div class="sc11">
                 <h2>Secondary School</h2>
+                <img src="sec_school.png" alt="sec_school">
                 <h4>CBSE: 2017-2018 <br> Delhi Public School, Greater Faridabad</h4>
                 <p>Percentage: 90.4%</p>
             </div>
 
             <div class="sc2"></div>
             <div class="sc21">
-                <h2>Senior Secondary School</h2>
+                <h2>Sr. Secondary School</h2>
+                <img src="secondary_school.png" alt="secondary_school">
                 <h4>CBSE: 2019-2020 <br> Delhi Public School, Greater Faridabad</h4>
-                <p>Percentage: 90</p>
+                <p>Percentage: 90%</p>
             </div>
 
             <div class="sc3"></div>
             <div class="sc31">
-                <h2>2020-2024</h2>
-                <h3>B.Tech in Computer Science and Engineering</h3>
-                <h4>Bennett University, Chennai</h4>
+                <h2>College</h2>
+                <img src="college.png" alt="college">
+                <h4>B.Tech in CSE: 2020-2024 <br> Bennett University, Greater <br> Noida</h4>
                 <p>CGPA: 9.4 (Till 3rd Year)</p>
             </div>
 
         </div>
-       
-    </div>
+
+        <div class="middle3">
+            <h1>Skills</h1>
+            <div class="line"></div>
+            <h2>Programming Languages/Cloud/Databases</h2>
+            <div class="slider">
+                <div class="slides">
+
+                  <div id="slide-1">
+                    <img src="c++.png" alt="c++">
+                    <div class="sliding1">
+                        <h2>C++</h2>
+                        <p>Intermediate</p>
+                    </div>
+                  </div>
+
+                  <div id="slide-2">
+                    <img src="python.png" alt="">
+                    <div class="sliding2">
+                        <h2>Python</h2>
+                        <p>Intermediate</p>
+                    </div>
+                  </div>
+                  <div id="slide-3">
+                    <img src="html-5.png" alt="">
+                    <div class="sliding3">
+                        <h2>HTML</h2>
+                        <p>Intermediate</p>
+                    </div>
+                  </div>
+                  <div id="slide-4">
+                    <img src="css.png" alt="">
+                    <div class="sliding4">
+                        <h2>CSS</h2>
+                        <p>Intermediate</p>
+                    </div>
+                  </div>
+                  <div id="slide-5">
+                    <img src="java-script.png" alt="">
+                    <div class="sliding5">
+                        <h2>JavaScript</h2>
+                        <p>Intermediate</p>
+                    </div>
+                  </div>
+                    <div id="slide-6">
+                        <img src="java.png" alt="">
+                        <div class="sliding6">
+                            <h2>Java</h2>
+                            <p>Begineer</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-7">
+                        <img src="xml.png" alt="">
+                        <div class="sliding7">
+                            <h2>XML</h2>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+                    <div id="slide-8">
+                        <img src="mysql.png" alt="">
+                        <div class="sliding8">
+                            <h2>MySQL</h2>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+                    <div id="slide-9">
+                        <img src="aws.png" alt="">
+                        <div class="sliding9">
+                            <h2>AWS</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>CourseWork</h3>
+            <div class="slider2">
+                <div class="slides2">
+                    <div id="slide-10">
+                        <img src="dsa.png" alt="">
+                        <div class="sliding10">
+                            <h2>DSA</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-11">
+                        <img src="uiux.png" alt="">
+                        <div class="sliding11">
+                            <h2>UI/UX</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-12">
+                        <img src="ml.png" alt="">
+                        <div class="sliding12">
+                            <h2>Machine Learning</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 </body>
 </html>

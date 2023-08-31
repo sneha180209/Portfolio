@@ -23,3 +23,32 @@ function btnarrow() {
 
 }
 }
+
+
+function scrollToSection1() {
+    const section = document.querySelector(".middle1");
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+function scrollToSection2() {
+    const section = document.querySelector(".middle2");
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+window.addEventListener("scroll", function() {
+    const header = document.querySelector(".header");
+    if (window.scrollY > 150) { // Adjust this value as needed
+        header.classList.add("active");
+    } else {
+        header.classList.remove("active");
+    }
+});
+
+
+
+
+
