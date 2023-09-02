@@ -1,5 +1,6 @@
 function btnarrow() {
-    let e1 = document.querySelector(".btnarr");   
+    let e1 = document.querySelector(".btnarr");  
+    let e0 = document.querySelector(".btnarr1"); 
     let e2 = document.querySelector(".btn2");
     let e3 = document.querySelector(".btn3");
     let e4 = document.querySelector(".btn4");
@@ -10,13 +11,14 @@ function btnarrow() {
     e3.removeAttribute("hidden");
     e4.removeAttribute("hidden");
     e1.innerHTML = "Tech Links<span class='material-icons'>chevron_left</span>";
-    e1.style.width="93.1px";
-    // e1.style.display="none";
+    e0.style.width="400px";
+    // e0.style.transition="width 0.5s ease-in-out";
     
 } else {
-    // e1.style.display="flex";
+    e0.style.transition="width 0.5s";
+    e0.style.width="0px";
     e1.innerHTML = "Tech Links<span class='material-icons'>chevron_right</span>";
-    // e1.style.width="93.1px";
+    
     e2.setAttribute("hidden", "true");
     e3.setAttribute("hidden", "true");
     e4.setAttribute("hidden", "true");
@@ -39,6 +41,12 @@ function scrollToSection2() {
     }
 }
 
+function scrollToSection3() {
+    const section = document.querySelector(".middle3");
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
 window.addEventListener("scroll", function() {
     const header = document.querySelector(".header");
     if (window.scrollY > 150) { // Adjust this value as needed
