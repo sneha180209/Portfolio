@@ -8,6 +8,7 @@
 }
 
 .container{
+    /* top: 40%; */
     height: 100vh;
     width: 100%;
     background: linear-gradient(
@@ -555,13 +556,18 @@
 
 .container .middle3{
     position: absolute;
-    top: 340%;
+    top: 370%;
     left: 50%;
-    height: 180%;
+    height: 200%;
     width: 101%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    background: #180521;
+    background: linear-gradient(
+        45deg,
+        rgba(28, 1, 36, 0.9), 
+        rgba(14, 3, 22, 0.9), 
+        rgba(4, 1, 50, 0.9), 
+        rgba(35, 9, 27, 0.9)); 
     overflow: hidden;
     
 }
@@ -611,7 +617,7 @@
     left: 335px;
     height: 310px;
     width: 870px;
-    background: #22012b;
+    background: transparent;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -1121,7 +1127,7 @@
     left: 335px;
     height: 310px;
     width: 870px;
-    background: #22012b;
+    background: transparent;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -1361,18 +1367,13 @@
 
 .container .middle4{
     position: absolute;
-    top: 520%;
+    top: 560%;
     left: 50%;
     height: 180%;
     width: 101%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    background: linear-gradient(
-        45deg,
-        rgba(31, 2, 39, 0.9), 
-        rgba(44, 3, 75, 0.9), 
-        rgba(8, 5, 73, 0.9), 
-        rgba(66, 4, 46, 0.9)); 
+    background: #180521;
     transition: height 0.5s ease;
     overflow: hidden;
 }
@@ -1407,7 +1408,108 @@
 .container .middle4 img {
     position: relative;
     top: 15%;
-    left: 180px;
-    width: 400px;
-    height: 400px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+}
+
+.container .middle4 .timeline{
+    position: relative;
+    top: -30%;
+    left: 720px;
+    width: 700px;
+    height: 800px;
+    border-radius: 10px;
+    background: lavender;    
+    overflow: hidden;
+}
+
+
+.container .middle4 .timeline .vline{
+    position: relative;
+    top: 5%;
+    left: 100px;
+    width: 5px;
+    height: 725px;
+    border-radius: 30px;
+    background: #adaaab;
+    
+}
+
+.container .middle4 .timeline .c1{
+    position: absolute;
+    top: 11.5%;
+    left: 87.5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #180521;
+    box-shadow:  0 0 10px  rgba(187, 1, 255, 0.6);
+    -moz-box-shadow: 0 0 10px  rgba(187, 1, 255, 0.6);
+    -webkit-box-shadow: 0 0 10px  rgba(187, 1, 255, 0.6);
+    -o-box-shadow: 0 0 10px  rgba(187, 1, 255, 0.6);
+    background:lavender;
+}
+.container .middle4 .timeline .tri1{
+    position: relative;
+    top: -620px;
+    left: 140px;
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid transparent;
+    border-left: 100px solid #180521;
+    transform: rotate(180deg);
+    
+}
+
+.container .middle4 .timeline .work1{
+    position: relative;
+    top:-90%;
+    left: 25% ;
+    width: 500px;
+    height: 230px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    background: #180521;
+
+}
+
+.container .middle4 .timeline .work1 .ts1{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    top: 15%;
+    left: 00%;
+    font-size: medium;
+    color:rgb(255, 255, 255);
+    
+}
+
+.container .middle4 .timeline .work1 h2{
+    font-size: larger;
+}
+
+.container .middle4 .timeline .work1 .ts1 p{
+    background: rgba(0, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .middle4 .timeline .c2{
+    position: absolute;
+    position: absolute;
+    top: 52.5%;
+    left: 87.5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #180521;
+    box-shadow:  0 0 10px  rgba(187, 1, 255, 0.6);
+    -moz-box-shadow: 0 0 10px  rgba(187, 1, 255, 0.6);
+    -webkit-box-shadow: 0 0 10px  rgba(187, 1, 255, 0.6);
+    -o-box-shadow: 0 0 10px  rgba(187, 1, 255, 0.6);
+    background:lavender;
+    
 }

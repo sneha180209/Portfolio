@@ -47,6 +47,14 @@ function scrollToSection3() {
         section.scrollIntoView({ behavior: "smooth" });
     }
 }
+
+function scrollToSection4() {
+    const section = document.querySelector(".middle4");
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
 window.addEventListener("scroll", function() {
     const header = document.querySelector(".header");
     if (window.scrollY > 150) { // Adjust this value as needed
