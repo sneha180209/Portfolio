@@ -65,6 +65,8 @@ window.addEventListener("scroll", function() {
 });
 
 
-
-
-
+// let p1=document.querySelector(".pro1");
+// let pi1=document.querySelector(".pro_img1")
+// p1.addEventListener("hover",function(){
+//     pi1.style.width="400px";
+// });
