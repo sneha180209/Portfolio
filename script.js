@@ -62,6 +62,13 @@ function scrollToSection5() {
     }
 }
 
+function scrollToSection6() {
+    const section = document.querySelector(".footer");
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
 window.addEventListener("scroll", function() {
     const header = document.querySelector(".header");
     if (window.scrollY > 150) { // Adjust this value as needed
@@ -71,3 +78,13 @@ window.addEventListener("scroll", function() {
     }
 });
 
+function emailto() {
+    var email = 'sneha.gupta180902@gmail.com';
+    var subject = 'Subject of the email';
+    var body = 'Body of the email';
+
+    var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+
+}
