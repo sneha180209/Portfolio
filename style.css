@@ -47,14 +47,17 @@
     width: 100%;
     text-align: center;
     z-index: 100;
+    overflow: hidden;
 }
 
 .container .header img{
     position: relative;
-    height: 280px;
-    width: 280px;
-    top: 10px;
-    left: 10px;
+    height: 250px;
+    width: 230px;
+    top: 15px;
+    left: 0px;
+    margin-left: 20px;
+    overflow: hidden;
 }
 
 .header.active {
@@ -63,7 +66,7 @@
 .container .header .nav{
     position: relative;
     color: #fff;
-    left: 810px;
+    left: 560px;
     top: 6px;
     text-align: center;
 }
@@ -189,13 +192,6 @@
     
 }
 
-/* .container .middle1 .btnarr:active .btnarr1{
-    width: 400px;
-    transition: width 0.8s ease-in-out;
-    overflow: hidden;
-} */
-
-
 
 .container .middle1 .btnarr1 .btn2, .btn3, .btn4{
     position: relative;
@@ -211,8 +207,10 @@
     background: #29082e;
     width: fit-content;
     transition: all 3s ease-in-out;
-    
+   
 }
+
+  
 
 .container .middle1 .btnarr:hover, .btn1:hover{
     cursor: pointer;
@@ -2518,7 +2516,7 @@
 
 .container .footer .last{
     position: absolute;
-    top: 89%;
+    top: 91%;
     left: 0px;
     width: 105%;
     height: 10%;
