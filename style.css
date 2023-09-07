@@ -187,7 +187,7 @@
     width: 400px;
     top: -52px;
     left: 370px;
-    transition: width 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
     overflow: hidden;
     
 }
@@ -206,18 +206,58 @@
     border: 0.5px solid #29082e;
     background: #29082e;
     width: fit-content;
-    transition: all 3s ease-in-out;
-   
+    transition: all 0.3s ease-in-out;
+    
 }
 
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .btnarr1 .btn2,
+  .btnarr1 .btn3,
+  .btnarr1 .btn4 {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .btnarr1 .btn2.slide-in,
+  .btnarr1 .btn3.slide-in,
+  .btnarr1 .btn4.slide-in {
+    animation-name: slideIn;
+  }
+  
+  .btnarr1 .btn2.slide-out,
+  .btnarr1 .btn3.slide-out,
+  .btnarr1 .btn4.slide-out {
+    animation-name: slideOut;
+  }
+  
   
 
 .container .middle1 .btnarr:hover, .btn1:hover{
     cursor: pointer;
+    transition: all 0.3s ease-in-out
 }
   
 .container .middle1 .btnarr1 .btn2:hover, .btn3:hover, .btn4:hover{
     cursor: pointer;
+    transition: all 0.3s ease-in-out
 }
 
 .container .middle1 .btns{
@@ -436,7 +476,7 @@
 .container .middle2 .sc21{
     position: relative;
     top: 16.5%;
-    left: 617px;
+    left: 624px;
     height: 250px;
     width: 250px;
     border-radius: 10px;
@@ -511,8 +551,8 @@
 
 .container .middle2 .sc31{
     position: relative;
-    top: -53%;
-    left: 1030px;
+    top: -50%;
+    left: 1029px;
     height: 250px;
     width: 250px;
     border-radius: 10px;
@@ -1776,8 +1816,8 @@
 .container .middle5 .project0 .pro0{
     position: relative;
     top: 10%;
-    width: 420px;
-    height: 270px;
+    width: 590px;
+    height: 330px;
     border-radius: 30px;
     background: #240035;
     object-fit: fill;
@@ -1786,8 +1826,8 @@
 
 .container .middle5 .project0 .pro0 img{
     position: relative;
-    width: 480px;
-    height: 270px;
+    width: 650px;
+    height: 330px;
     top: 0%;
     left: -60px;
     opacity: 0.7;
@@ -1798,7 +1838,7 @@
     position: absolute;
     top: 40%;
     left :  50px;
-    font-size: xx-large;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #ffffff;
@@ -1810,11 +1850,11 @@
 .container .middle5 .project0 .pro0 p{
     position: absolute;
     top: 60%;
-    left: 50px;
+    left: 55px;
     font-family:'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: small;
+    font-size: medium;
     line-height: 1rem;
     color:#ffffff ;
     z-index: 2;
@@ -1825,10 +1865,10 @@
 .container .middle5 .project0 .pro0 h6{
     position: absolute;
     top: 7%;;
-    left: 290px;
+    left: 330px;
     font-family: 'Poppins';
     font-style:normal;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 100;
     color:white;
     z-index: 1;
@@ -1837,7 +1877,7 @@
 }
 
 .container .middle5 .project0 .pro0:hover img{
-    width: 340px;
+    width: 380px;
 }
 
 .container .middle5 .project0 .pro0:hover h3{
@@ -1856,22 +1896,23 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    top: -80px;
-    left: 266px;   
+    gap: 20px;
+    top: -100px;
+    left: 310px;   
     padding: 10px;
-    width: 150px;
+    width: 300px;
     visibility: hidden;
+    /* background: #000000; */
 }
 
 .container .middle5 .project0 .pro0 .pro_ts0 p{
     position: relative;
     color : #ffffff;
     text-align: center;
-    padding:  4px;
+    padding: 7px;
     border-radius: 5px;
     font-family:'Poppins', sans-serif;
-    font-size: 7px;
+    font-size: 15px;
     visibility: hidden;
     background: rgb(1, 122, 141);
 }
@@ -1893,8 +1934,9 @@
 .container .middle5 .project0 .pro1{
     position: relative;
     top: 10%;
-    width: 420px;
-    height: 270px;
+    width: 590px;
+    height: 330px;
+    left: 70px;
     border-radius: 30px;
     background: #240035;
     object-fit: fill;
@@ -1903,10 +1945,10 @@
 
 .container .middle5 .project0 .pro1 img{
     position: relative;
-    width: 480px;
-    height: 270px;
+    width: 650px;
+    height: 330px;
     top: 0%;
-    left: -60px;
+    left: -0px;
     opacity: 0.7;
     transition: width 0.3s ease-in-out;
 }
@@ -1915,7 +1957,7 @@
     position: absolute;
     top: 40%;
     left :  50px;
-    font-size: xx-large;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #ffffff;
@@ -1927,11 +1969,11 @@
 .container .middle5 .project0 .pro1 p{
     position: absolute;
     top: 60%;
-    left: 50px;
+    left: 55px;
     font-family:'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: small;
+    font-size: medium;
     line-height: 1rem;
     color:#ffffff ;
     z-index: 2;
@@ -1942,10 +1984,10 @@
 .container .middle5 .project0 .pro1 h6{
     position: absolute;
     top: 7%;;
-    left: 290px;
+    left: 340px;
     font-family: 'Poppins';
     font-style:normal;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 100;
     color:white;
     z-index: 1;
@@ -1954,7 +1996,7 @@
 }
 
 .container .middle5 .project0 .pro1:hover img{
-    width: 340px;
+    width: 330px;
 }
 
 .container .middle5 .project0 .pro1:hover h3{
@@ -1973,22 +2015,22 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     top: -130px;
-    left: 266px;   
+    left: 315px;   
+    visibility: hidden;   
     padding: 10px;
-    width: 150px;
-    visibility: hidden;
+    width: 250px;
 }
 
 .container .middle5 .project0 .pro1 .pro_ts1 p{
     position: relative;
     color : #ffffff;
     text-align: center;
-    padding:  4px;
+    padding:  10px;
     border-radius: 5px;
     font-family:'Poppins', sans-serif;
-    font-size: 7px;
+    font-size: 17px;
     visibility: hidden;
     background: rgb(1, 122, 141);
 }
@@ -2040,8 +2082,8 @@
 .container .middle5 .project .pro2{
     position: relative;
     top: 10%;
-    width: 420px;
-    height: 270px;
+    width: 590px;
+    height: 330px;
     border-radius: 30px;
     /* border: 2px solid #adaaab; */
     background: #240035;
@@ -2051,8 +2093,8 @@
 
 .container .middle5 .project .pro2 img{
     position: relative;
-    width: 480px;
-    height: 270px;
+    width: 650px;
+    height: 330px;
     top: 0%;
     left: -60px;
     opacity: 0.7;
@@ -2063,7 +2105,7 @@
     position: absolute;
     top: 40%;
     left: 50px;
-    font-size: xx-large;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #ffffff;
@@ -2075,11 +2117,11 @@
 .container .middle5 .project .pro2 p{
     position: absolute;
     top: 60%;
-    left: 50px;
+    left: 55px;
     font-family:'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: small;
+    font-size: medium;
     line-height: 1rem;
     color: #ffffff ;
     z-index: 1;
@@ -2090,10 +2132,10 @@
 .container .middle5 .project .pro2 h6{
     position: absolute;
     top: 7%;;
-    left: 290px;
+    left: 330px;
     font-family: 'Poppins';
     font-style:normal;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 100;
     color:white;
     z-index: 1;
@@ -2102,7 +2144,7 @@
 }
 
 .container .middle5 .project .pro2:hover img{
-    width: 340px;
+    width: 380px;
 }
 
 .container .middle5 .project .pro2:hover h3{
@@ -2121,11 +2163,11 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    top: -120px;
-    left: 266px;   
+    gap: 20px;
+    top: -130px;
+    left: 308px;   
     padding: 10px;
-    width: 150px;
+    width: 265px;
     visibility: hidden;
 }
 
@@ -2133,10 +2175,10 @@
     position: relative;
     color : #ffffff;
     text-align: center;
-    padding:  4px;
+    padding: 7px;
     border-radius: 5px;
     font-family:'Poppins', sans-serif;
-    font-size: 8px;
+    font-size: 15px;
     visibility: hidden;
     background: rgb(1, 122, 141);
 }
@@ -2159,9 +2201,9 @@
 .container .middle5 .project .pro3{
     position: relative;
     top: 10%;
-    width: 420px;
-    height: 270px;
-    /* padding-right: 5px; */
+    width: 590px;
+    height: 330px;
+    left: 70px;
     border-radius: 30px;
     background: #240035;
     object-fit: fill;
@@ -2170,8 +2212,8 @@
 
 .container .middle5 .project .pro3 img{
     position: relative;
-    width: 480px;
-    height: 270px;
+    width: 650px;
+    height: 330px;
     top: 0%;
     left: -60px;
     opacity: 0.7;
@@ -2182,7 +2224,7 @@
     position: absolute;
     top: 40%;
     left: 50px;
-    font-size: xx-large;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #ffffff;
@@ -2193,12 +2235,12 @@
 
 .container .middle5 .project .pro3 p{
     position: absolute;
-    top: 62%;
-    left: 50px;
+    top: 60%;
+    left: 55px;
     font-family:'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: small;
+    font-size: medium;
     line-height: 1rem;
     margin-right: 10px;
     color:#ffffff ;
@@ -2210,10 +2252,10 @@
 .container .middle5 .project .pro3 h6{
     position: absolute;
     top: 7%;;
-    left: 290px;
+    left: 330px;
     font-family: 'Poppins';
     font-style:normal;
-    font-size:17px;
+    font-size: 22px;
     font-weight: 100;
     color:white;
     z-index: 1;
@@ -2222,7 +2264,7 @@
 }
 
 .container .middle5 .project .pro3:hover img{
-    width: 340px;
+    width: 380px;
 }
 
 .container .middle5 .project .pro3:hover h3{
@@ -2241,11 +2283,11 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    top: -140px;
-    left: 266px;   
+    gap: 20px;
+    top: -130px;
+    left: 308px;    
     padding: 10px;
-    width: 150px;
+    width: 265px;
     visibility: hidden;
 }
 
@@ -2253,10 +2295,10 @@
     position: relative;
     color : #ffffff;
     text-align: center;
-    padding:  4px;
+    padding: 7px;
     border-radius: 5px;
     font-family:'Poppins', sans-serif;
-    font-size: 7px;
+    font-size: 15px;
     visibility: hidden;
     background: rgb(1, 122, 141);
 }
@@ -2528,10 +2570,23 @@
     
 }
 
-.container .footer .last p{
+.container .footer .last img{
     position: relative;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* .container .footer .last p{
+    position: absolute;
     top: 45%;
-    left: 40%;
+    left: -120%;
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-size: 1.3rem;
@@ -2539,4 +2594,4 @@
     text-align: right;
     letter-spacing: 3px;
     overflow: hidden;
-}
+} */

@@ -1,28 +1,38 @@
-let e1 = document.querySelector(".btnarr");  
-let e0 = document.querySelector(".btnarr1"); 
+let e1 = document.querySelector(".btnarr");
+let e0 = document.querySelector(".btnarr1");
 let e2 = document.querySelector(".btn2");
 let e3 = document.querySelector(".btn3");
 let e4 = document.querySelector(".btn4");
 let x = document.querySelector(".btn");
 
 function btnarrow() {
-    
-   if (e2.hasAttribute("hidden")) {
+  if (e2.hasAttribute("hidden")) {
     e2.removeAttribute("hidden");
     e3.removeAttribute("hidden");
     e4.removeAttribute("hidden");
+    e2.classList.add("slide-in");
+    e3.classList.add("slide-in");
+    e4.classList.add("slide-in");
     e1.innerHTML = "Tech Links<span class='material-icons'>chevron_left</span>";
-    // e2.style.transition="all 0.3 ease-in-out";
-    
-} else {
-
-    e1.innerHTML = "Tech Links<span class='material-icons'>chevron_right</span>";
-    
-    e2.setAttribute("hidden", "true");
-    e3.setAttribute("hidden", "true");
-    e4.setAttribute("hidden", "true");
-
-}
+  } else {
+    if (e2.classList.contains("slide-in")) {
+      e2.classList.remove("slide-in");
+      e3.classList.remove("slide-in");
+      e4.classList.remove("slide-in");
+      e2.classList.add("slide-out");
+      e3.classList.add("slide-out");
+      e4.classList.add("slide-out");
+      e1.innerHTML = "Tech Links<span class='material-icons'>chevron_right</span>";
+    } else {
+      e2.classList.remove("slide-out");
+      e3.classList.remove("slide-out");
+      e4.classList.remove("slide-out");
+      e2.classList.add("slide-in");
+      e3.classList.add("slide-in");
+      e4.classList.add("slide-in");
+      e1.innerHTML = "Tech Links<span class='material-icons'>chevron_left</span>";
+    }
+  }
 }
 
 
