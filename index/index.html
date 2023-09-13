@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo2.png">
+            <div class="nav about" onclick="scrollToSection1()">About</div>
+            <div class="nav education" onclick="scrollToSection2()">Education</div>
+            <div class="nav skills" onclick="scrollToSection3()">Skills</div>
+            <div class="nav exp" onclick="scrollToSection4()">Experience</div>
+            <div class="nav projects" onclick="scrollToSection5()">Projects</div>
+            <div class="nav contact" onclick="scrollToSection6()">Contact</div>
+        </div>
+        <div class="middle1">
+            <img src="mypic.jpeg" alt="Sneha Gupta">
+            <h1>Hi! I'm Sneha Gupta</h1>
+            <p>Hello Folks! Welcome to my Portifolio. I am an undergraduate student <br> with innovative team player skills looking to work with
+                 an organisation <br> that will help me to grow my technical skills and professional development.<br>
+            Looking for SDE and Web development roles. Currently learning and <br> refining JS and its frameworks.</p>
+            <div class="btn">
+                <a href="https://drive.google.com/file/d/14jhJOGNMiGz2851o7DWJEaTQwKLL4xuj/view?usp=sharing"><button class="btn1">Download Resume</button></a>
+                <button class="btnarr" onclick="btnarrow()">Tech Links<span class="material-icons">chevron_right</span></button>
+            </div>
+            <div class="btnarr1">
+                <a href="https://auth.geeksforgeeks.org/user/sneha1809"><button class="btn2" hidden>GeeksForGeeks</button></a>
+                <a href="https://leetcode.com/sneha1809/"><button class="btn3" hidden>LeetCode</button></a>
+                <a href="https://www.figma.com/@snehag1809"><button class="btn4" hidden>Figma</button></a>
+            </div>
+            <div class="btns">
+                <a href="https://www.linkedin.com/in/snehagupta18/"></a><button class="btn5"><i class="fa fa-linkedin-square"></i></button></a>
+                <a href="https://github.com/sneha180209"><button class="btn6"><i class="fa fa-github"></i></button></a>
+                <a href="https://www.instagram.com/sneha_gupta18/"><button class="btn7"><i class="fa fa-instagram"></i></button></a>
+            </div>
+
+        </div>
+
+        <div class="middle2">
+            <h1>Education</h1>
+            <div class="line"></div>
+            <div class="rect"></div>
+            <div class="sc1"></div>
+            <div class="sc11">
+                <h2>Secondary School</h2>
+                <img src="sec_school.png" alt="sec_school">
+                <h4>CBSE: 2017-2018 <br> Delhi Public School, Greater Faridabad</h4>
+                <p>Percentage: 90.4%</p>
+            </div>
+
+            <div class="sc2"></div>
+            <div class="sc21">
+                <h2>Sr. Secondary School</h2>
+                <img src="secondary_school.png" alt="secondary_school">
+                <h4>CBSE: 2019-2020 <br> Delhi Public School, Greater Faridabad</h4>
+                <p>Percentage: 90%</p>
+            </div>
+
+            <div class="sc3"></div>
+            <div class="sc31">
+                <h2>College</h2>
+                <img src="college.png" alt="college">
+                <h4>B.Tech in CSE: 2020-2024 <br> Bennett University, Greater <br> Noida</h4>
+                <p>CGPA: 9.4 (Till 3rd Year)</p>
+            </div>
+
+        </div>
+
+        <div class="middle3">
+            <h1>Skills</h1>
+            <div class="line"></div>
+            <h2>Programming Languages/Cloud/Databases</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div id="slide-1">
+                        <img src="c++.png" alt="c++">
+                        <div class="sliding1">
+                            <h2>C++</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-2">
+                        <img src="python.png" alt="">
+                        <div class="sliding2">
+                            <h2>Python</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div id="slide-3">
+                        <img src="html-5.png" alt="">
+                        <div class="sliding3">
+                            <h2>HTML</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div id="slide-4">
+                        <img src="css.png" alt="">
+                        <div class="sliding4">
+                            <h2>CSS</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div id="slide-5">
+                        <img src="java-script.png" alt="">
+                        <div class="sliding5">
+                            <h2>JavaScript</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div id="slide-6">
+                        <img src="java.png" alt="">
+                        <div class="sliding6">
+                            <h2>Java</h2>
+                            <p>Begineer</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-7">
+                        <img src="xml.png" alt="">
+                        <div class="sliding7">
+                            <h2>XML</h2>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-8">
+                        <img src="mysql.png" alt="">
+                        <div class="sliding8">
+                            <h2>MySQL</h2>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-9">
+                        <img src="aws.png" alt="">
+                        <div class="sliding9">
+                            <h2>AWS</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>CourseWork</h3>
+            <div class="slider2">
+                <div class="slides2">
+                    <div id="slide-10">
+                        <img src="dsa.png" alt="">
+                        <div class="sliding10">
+                            <h2>DSA</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-11">
+                        <img src="uiux.png" alt="">
+                        <div class="sliding11">
+                            <h2>UI/UX</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-12">
+                        <img src="ml.png" alt="">
+                        <div class="sliding12">
+                            <h2>Machine Learning</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-13">
+                        <img src="research.png" alt="">
+                        <a href="https://icons8.com/illustrations/author/mNCLibjicqSz"></a>
+                        <div class="sliding13">
+                            <h2>Research</h2>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-14">
+                        <img src="os.png" alt="">
+                        <div class="sliding14">
+                            <h2>Operating Sytem</h2>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-15">
+                        <img src="dbms.png" alt="">
+                        <div class="sliding15">
+                            <h2>DBMS</h2>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-16">
+                        <img src="cn.png" alt="">
+                        <div class="sliding16">
+                            <h2>Computer Networks</h2>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="middle4">
+            <h1>Experience</h1>
+            <div class="line"></div>
+            <img src="work10.gif">
+            <div class="timeline">
+                <div class="vline"></div>
+                <div class="c1"></div>
+                <div class="tri1"></div>
+                <div class="work1">
+                    <h2>Intern - STAQO</h2>
+                    <br>
+                    <p>August 2023 - Present<p>
+                    <br>
+                    <p>Working on different projects and tasks assigned by the company.</p> 
+                    <div class="ts1">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript and Frameworks</p>
+                    </div>
+                </div>
+
+                <div class="c2"></div>
+                <div class="tri1"></div>
+                <div class="work1">
+                    <h2>Research Intern</h2>
+                    <br>
+                    <p>September 2023 - Present</p>
+                    <br>
+                    <p>Working on a research paper and project on the topic "Stock Closing Price Prediction using Machine Learning".</p>
+                    <div class="ts1">
+                        <p>Python</p>
+                        <p>Machine Learning</p>
+                    </div>
+                </div>
+
+
+            </div> 
+
+        </div>
+
+        <div class="middle5">
+            <h1>Projects</h1>
+            <div class="line"></div>
+            <p class="mid5_para">Things I've worked on</p>
+            <h2 class="head0">Latest</h2>
+            <div class="project0">
+                <div class="pro0">
+                    <h3>CVRS</h3>
+                    <p>Covid Vaccine Recommender System</p>
+                    <img class="pro_img0" src="covid4.jpg">
+                    <h6>A covid vaccine recommendation model which will predict accuracy of
+                        vaccines considering side effects for better decision-making.</h6>
+                    <div class="pro_ts0">
+                        <p class="pts1">Python</p>
+                        <p class="pts2">Machine Learning</p>
+                    </div>
+                </div>
+                <div class="pro1">
+                    <h3>Netflix Clone</h3>
+                    <p>Netflix Homepage</p>
+                    <img class="pro_img1" src="netflix1.jpg">
+                    <h6>Created a Netflix-inspired homepage with HTML, CSS, and JavaScript for a dynamic, engaging user experience..</h6>
+                    <div class="pro_ts1">
+                        <p class="pts1">HTML</p>
+                        <p class="pts2">CSS</p>
+                        <p class="pts3">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="head1">Earlier</h2>
+            <div class="project">
+
+                <div class="pro2">
+                    <h3>BLP</h3>
+                    <p>Bank Loan Prediction</p>
+                    <img class="pro_img2" src="bank2.jpg">
+                    <h6>Developed loan eligibility system on AWS, leveraging SageMaker and other AWS services for efficient, secure, and accurate loan assessments.</h6>
+                    <div class="pro_ts2">
+                        <p class="pts3">Python</p>
+                        <p class="pts4">Machine Learning</p>
+                        <p class="pts5">Amazon Web Services</p>
+                    </div>
+                </div>
+
+                <div class="pro3">
+                    <h3>DBYPC</h3>
+                    <p>Daily Binge - Your Personal Cheff!!</p>
+                    <img class="pro_img3" src="food1.jpg">
+                    <h6>Stepwise cooking app guides novice and intermediate cooks with precise, time-based instructions for a seamless culinary experience.</h6>
+                    <div class="pro_ts3">
+                        <p class="pts6">Java</p>
+                        <p class="pts7">XML</p>
+                        <p class="pts9">Figma</p>
+                        <p class="pts8">Android Studio</p>
+                        <p class="pts10">Firebase</p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+        <div class="footer">
+            <h1>Contact</h1>
+            <div class="line"></div>
+            <h2>Get in Touch</h2>
+            <p>Feel free to contact me for any queries or collaborations.</p>
+            <img src="contact2.gif" alt="">
+            <div class="btnf">
+                <a href="https://www.linkedin.com/in/snehagupta18/"></a><button class="btn8"><i class="fa fa-linkedin-square"></i></button></a>
+                <a href="https://github.com/sneha180209"><button class="btn9"><i class="fa fa-github"></i></button></a>
+                <a href="https://www.instagram.com/sneha_gupta18/"><button class="btn10"><i class="fa fa-instagram"></i></button></a>
+            </div>
+
+            
+            <div class="emailbtn">
+                <p>Email Id</p>
+                <div class="emailload" onclick="emailto()">
+                    <p class="emailp">Email Id</p>
+                    <!-- <a href="mailto:sneha.gupta180902@gmail.com"></a> -->
+                </div>
+            </div> 
+            
+            <div class="last">
+                <img src="logo2.png">
+                 <p>Copyright @Sneha Gupta</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
