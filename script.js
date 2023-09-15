@@ -1,3 +1,12 @@
+var typed=new Typed(".auto-type",{
+    strings: ["Programmer", "UI/UX Designer", "Web Developer"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+}
+)
+
+
 let e1 = document.querySelector(".btnarr");
 let e0 = document.querySelector(".btnarr1");
 let e2 = document.querySelector(".btn2");

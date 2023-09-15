@@ -9,7 +9,7 @@
 }
 
 .container{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background: linear-gradient(
         45deg,
@@ -107,9 +107,22 @@
     top: 0%;
     left: 100px
 }
-
+.container .middle1 h1 .auto-type{
+    position: relative;
+    top: 0%;
+    left: 0px;
+    color: #c69aff;
+    font-size: 4.5rem;
+    font-family: 'Mukta', sans-serif;
+    text-align: left;
+    letter-spacing: 5px;
+    position: relative; 
+    animation: typing 3s steps(30) 1s 1 normal both,
+    blinkTextCursor 500ms steps(30) infinite normal;
+    overflow: hidden;
+}
 .container .middle1 p{
-    font-size: 1.33rem;
+    font-size: 1.2rem;
     font-family: 'Mukta', sans-serif;
     text-align: left;
     letter-spacing: 1px;
@@ -262,8 +275,8 @@
 
 .container .middle1 .btns{
     position: relative;
-    top: -5%;
-    left: 80px;
+    top: -9%;
+    left: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,7 +340,7 @@
 
 .container .middle2{
     position: absolute;
-    top: 185%;
+    top: 188%;
     left: 50%;
     height: 170%;
     width: 101%;
@@ -1233,19 +1246,20 @@
     z-index: 1;
   }
 
-.container .middle3 .slider2 .slides2 #slide-10 .sliding10 {
-    position: absolute; 
-    top: 0;
+  .container .middle3 .slider2 .slides2 #slide-10 .sliding10 {
+    position: absolute;
+    top: 100%; /* Start with top at 100% to hide the element */
     left: 0;
-    height: 0;
+    height: 0%;
     width: 100%;
     background: transparent;
-    z-index: 2; 
-    transition: height 0.5s ease; 
+    z-index: 2;
+    transition: top 0.5s ease, height 0.5s ease; /* Add top transition */
     overflow: hidden;
 }
 
 .container .middle3 .slider2 .slides2 #slide-10:hover .sliding10 {
+    top: 0; /* Move the element to the top when hovering */
     height: 100%;
     background: linear-gradient(
         45deg,
@@ -1253,8 +1267,9 @@
         rgba(41, 2, 133, 0.8),
         rgba(125, 2, 52, 0.8),
         rgba(79, 3, 126, 0.8));
-    transition: height 0.5s ease;
+    transition: top 0.5s ease, height 0.5s ease; /* Add top transition */
 }
+
 
 .container .middle3 .slider2 .slides2 #slide-10 .sliding10 h2{
     position: relative;
@@ -1267,7 +1282,7 @@
     font-weight: 600; 
     text-align: center;
     letter-spacing: 2px;
-    transition: height 0.5s ease;
+    /* transition: height 0.5s ease; */
 }
 
 .container .middle3 .slider2 .slides2 #slide-10 .sliding10 p{
@@ -1280,22 +1295,23 @@
     font-family: 'Mukta', sans-serif; 
     text-align: center;
     letter-spacing: 2px;
-    transition: height 0.5s ease;
+    /* transition: height 0.5s ease; */
 }
 
 .container .middle3 .slider2 .slides2 #slide-11 .sliding11 {
     position: absolute; 
-    top: 0;
+    top: 100%;
     left: 0;
-    height: 0;
+    height: 0%;
     width: 100%; 
     background: transparent;
     z-index: 2; 
-    transition: height 0.5s ease; 
+    transition: height 0.5s ease, top 0.5s ease; 
     overflow: hidden;
 }
 
 .container .middle3 .slider2 .slides2 #slide-11:hover .sliding11 {
+    top: 0; /* Move the element to the top when hovering */
     height: 100%;
     background: linear-gradient(
         45deg,
@@ -1303,7 +1319,7 @@
         rgba(41, 2, 133, 0.8),
         rgba(125, 2, 52, 0.8),
         rgba(79, 3, 126, 0.8));
-    transition: height 0.5s ease;
+    transition: top 0.5s ease, height 0.5s ease;
 }
 
 .container .middle3 .slider2 .slides2 #slide-11 .sliding11 h2{
@@ -1335,17 +1351,18 @@
 
 .container .middle3 .slider2 .slides2 #slide-12 .sliding12 {
     position: absolute; 
-    top: 0;
+    top: 100%;
     left: 0;
     height: 0;
     width: 100%; 
     background: transparent;
     z-index: 2; 
-    transition: height 0.5s ease; 
+    transition: height 0.5s ease, top 0.5s ease; 
     overflow: hidden;
 }
 
 .container .middle3 .slider2 .slides2 #slide-12:hover .sliding12 {
+    top: 0; /* Move the element to the top when hovering */
     height: 100%;
     background: linear-gradient(
         45deg,
@@ -1353,7 +1370,7 @@
         rgba(41, 2, 133, 0.8),
         rgba(125, 2, 52, 0.8),
         rgba(79, 3, 126, 0.8));
-    transition: height 0.5s ease;
+    transition: top 0.5s ease, height 0.5s ease;
 }
 
 .container .middle3 .slider2 .slides2 #slide-12 .sliding12 h2{
@@ -1385,25 +1402,26 @@
 
 .container .middle3 .slider2 .slides2 #slide-13 .sliding13 {
     position: absolute; 
-    top: 0;
+    top: 100%;
     left: 0;
     height: 0;
     width: 100%; 
     background: transparent;
     z-index: 2; 
-    transition: height 0.5s ease; 
+    transition: height 0.5s ease, top 0.5s ease; 
     overflow: hidden;
 }
 
 .container .middle3 .slider2 .slides2 #slide-13:hover .sliding13 {
+    top: 0; /* Move the element to the top when hovering */
     height: 100%;
     background: linear-gradient(
         45deg,
         rgba(71, 4, 88, 0.8),
         rgba(41, 2, 133, 0.8),
         rgba(125, 2, 52, 0.8),
-        rgba(79, 3, 126, 0.8)); 
-    transition: height 0.5s ease;
+        rgba(79, 3, 126, 0.8));
+    transition: top 0.5s ease, height 0.5s ease;
 }
 
 .container .middle3 .slider2 .slides2 #slide-13 .sliding13 h2{
@@ -1435,25 +1453,26 @@
 
 .container .middle3 .slider2 .slides2 #slide-14 .sliding14{
     position: absolute; 
-    top: 0;
+    top: 100%;
     left: 0;
     height: 0;
     width: 100%; 
     background: transparent;
     z-index: 2; 
-    transition: height 0.5s ease; 
+    transition: height 0.5s ease, top 0.5s ease; 
     overflow: hidden;
 }
 
 .container .middle3 .slider2 .slides2 #slide-14:hover .sliding14 {
+    top: 0; /* Move the element to the top when hovering */
     height: 100%;
     background: linear-gradient(
         45deg,
-        rgba(71, 4, 88, 0.8), 
+        rgba(71, 4, 88, 0.8),
         rgba(41, 2, 133, 0.8),
-        rgba(125, 2, 52, 0.8), 
-        rgba(79, 3, 126, 0.8)); 
-    transition: height 0.5s ease;
+        rgba(125, 2, 52, 0.8),
+        rgba(79, 3, 126, 0.8));
+    transition: top 0.5s ease, height 0.5s ease;
 }
 
 .container .middle3 .slider2 .slides2 #slide-14 .sliding14 h2{
@@ -1485,25 +1504,26 @@
 
 .container .middle3 .slider2 .slides2 #slide-15 .sliding15{
     position: absolute; 
-    top: 0;
+    top: 100%;
     left: 0;
     height: 0;
     width: 100%; 
     background: transparent;
     z-index: 2; 
-    transition: height 0.5s ease; 
+    transition: height 0.5s ease, top 0.5s ease; 
     overflow: hidden;
 }
 
 .container .middle3 .slider2 .slides2 #slide-15:hover .sliding15 {
+    top: 0; /* Move the element to the top when hovering */
     height: 100%;
     background: linear-gradient(
         45deg,
-        rgba(71, 4, 88, 0.8), 
+        rgba(71, 4, 88, 0.8),
         rgba(41, 2, 133, 0.8),
-        rgba(125, 2, 52, 0.8), 
-        rgba(79, 3, 126, 0.8)); 
-    transition: height 0.5s ease;
+        rgba(125, 2, 52, 0.8),
+        rgba(79, 3, 126, 0.8));
+    transition: top 0.5s ease, height 0.5s ease;
 }
 
 .container .middle3 .slider2 .slides2 #slide-15 .sliding15 h2{
@@ -1535,25 +1555,26 @@
 
 .container .middle3 .slider2 .slides2 #slide-16 .sliding16{
     position: absolute; 
-    top: 0;
+    top: 100%;
     left: 0;
     height: 0;
     width: 100%; 
     background: transparent;
     z-index: 2; 
-    transition: height 0.5s ease; 
+    transition: height 0.5s ease, top 0.5s ease; 
     overflow: hidden;
 }
 
 .container .middle3 .slider2 .slides2 #slide-16:hover .sliding16 {
+    top: 0; /* Move the element to the top when hovering */
     height: 100%;
     background: linear-gradient(
         45deg,
-        rgba(71, 4, 88, 0.8), 
+        rgba(71, 4, 88, 0.8),
         rgba(41, 2, 133, 0.8),
-        rgba(125, 2, 52, 0.8), 
-        rgba(79, 3, 126, 0.8)); 
-    transition: height 0.5s ease;
+        rgba(125, 2, 52, 0.8),
+        rgba(79, 3, 126, 0.8));
+    transition: top 0.5s ease, height 0.5s ease;
 }
 
 .container .middle3 .slider2 .slides2 #slide-16 .sliding16 h2{
