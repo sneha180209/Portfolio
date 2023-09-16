@@ -104,22 +104,34 @@
     text-align: left;
     letter-spacing: 5px;
     position: relative; 
-    top: 0%;
+    top: -4%;
     left: 100px
 }
 .container .middle1 h1 .auto-type{
     position: relative;
-    top: 0%;
-    left: 0px;
+    top: -2%;
+    left: 5px;
     color: #c69aff;
     font-size: 4.5rem;
     font-family: 'Mukta', sans-serif;
     text-align: left;
     letter-spacing: 5px;
     position: relative; 
-    animation: typing 3s steps(30) 1s 1 normal both,
-    blinkTextCursor 500ms steps(30) infinite normal;
-    overflow: hidden;
+    /* animation: typing 3s steps(30) 1s 1 normal both,
+    blinkTextCursor 500ms steps(30) infinite normal; */
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    10%, 30%, 50%, 70%, 90%{
+        color: #fff;
+        text-shadow: 0 0 10px #d900ff,
+        0 0 20px #eda8f9,
+        0 0 30px #d900ff;
+    }
+
 }
 .container .middle1 p{
     font-size: 1.2rem;
@@ -127,14 +139,14 @@
     text-align: left;
     letter-spacing: 1px;
     position: relative; 
-    top: 0%;
+    top: -4%;
     left: 100px
 }
 
 .container .middle1 .btn{
     position: relative;
-    top: 0%;
-    left: 100px;
+    top: -4%;
+    left: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +210,7 @@
     background: transparent;
     height: 42px;
     width: 400px;
-    top: -52px;
+    top: -80px;
     left: 370px;
     transition: all 0.8s ease-in-out;
     overflow: hidden;
@@ -275,8 +287,8 @@
 
 .container .middle1 .btns{
     position: relative;
-    top: -9%;
-    left: 70px;
+    top: -12%;
+    left: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -637,9 +649,9 @@
 
 .container .middle3{
     position: absolute;
-    top: 370%;
+    top: 380%;
     left: 50%;
-    height: 200%;
+    height: 214%;
     width: 101%;
     transform: translate(-50%, -50%);
     color: #ffffff;
@@ -2402,7 +2414,7 @@
 .container .footer .btnf{
     position: relative;
     top: 12%;
-    left: 50px;
+    left: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2494,9 +2506,9 @@
 
 .container .footer .emailbtn p{
     position: relative;
-    top: 52%;
-    left: 51%;
-    transform: translate(-50%, -50%);
+    top: 12%;
+    left: 3%;
+    /* transform: translate(-50%, -50%); */
     color: #1f0130;
     font-size: 1.5rem;
     font-family: 'Mukta', sans-serif;
@@ -2560,6 +2572,8 @@
 }
 
 .container .footer .emailbtn:hover .emailp{
+    top: 12%;
+    left: 3%;
     visibility: visible;
     cursor: pointer;
 }
@@ -2604,15 +2618,15 @@
     overflow: hidden;
 }
 
-/* .container .footer .last p{
+.container .footer .last p{
     position: absolute;
     top: 45%;
-    left: -120%;
+    left: 15%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-size: 1.3rem;
-    font-family: 'Mukta', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
     text-align: right;
     letter-spacing: 3px;
     overflow: hidden;
-} */
+}
