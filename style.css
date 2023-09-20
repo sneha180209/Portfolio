@@ -2635,14 +2635,4 @@
 }
 
 
-@media screen and (max-width: 750px)
-{
-    .container .header .nav{
-        left: 0px;
-    }
-
-    .container .middle1 h1{
-        font-size: 2.5rem;
-        
-    }
-}
+/* @media screen and (max-width: 750px) */
