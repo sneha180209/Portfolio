@@ -377,6 +377,7 @@
     left: 100px
 }
 
+
 .container .middle2 .line{
     position: relative;
     top: 5%;
@@ -490,7 +491,7 @@
 
 .container .middle2 .sc2{
     position: relative;
-    top: 16.4%;
+    top: 16%;
     left: 750px;
     height: 70px;
     width: 10px;
@@ -566,7 +567,7 @@
 }
 .container .middle2 .sc3{
     position: relative;
-    top: -17.8%;
+    top: -18.5%;
     left: 1155px;
     height: 70px;
     width: 10px;
@@ -2634,5 +2635,362 @@
     overflow: hidden;
 }
 
+@media screen and (min-width:1300px) and (max-width:1451px){
+    .container .header .nav{
+        left: 400px;
+    }
 
-/* @media screen and (max-width: 750px) */
+    .container .middle1 img{
+        left: 850px;
+    }
+    .container .middle2 .rect{
+        left: 100px;
+        width: 1150px;
+    }
+
+    .container .middle3 .slider{
+        left: 90px;
+        width: 1150px;
+    }
+
+    .container .middle3 .slider2{
+        left: 100px;
+        width: 1150px;
+    }
+
+    .container .middle4 img{
+        left: 100px;
+        height: 400px ;
+        width: 400px;
+    }
+
+    .container .middle4 .timeline{
+        left: 600px;
+        top: -22%;
+    }
+
+    .container .middle5 .project0 .pro0{
+        width: 550px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1{
+        width: 550px;
+        height: 330px;
+    }
+
+    .container .middle5 .project .pro2{
+        width: 550px;
+        height: 330px;
+    }
+
+    .container .middle5 .project .pro3{
+        width: 550px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro0 .pro_ts0{
+       top: -120px;
+        width: 240px;
+
+    }
+
+    .container .middle5 .project .pro2 h6{
+        font-size: 20px;
+    }
+
+    .container .middle5 .project .pro2 .pro_ts2{
+        top: -165px;
+         width: 240px;
+ 
+     }
+
+     .container .middle5 .project .pro3 h6{
+        font-size: 20px;
+    }
+
+    .container .middle5 .project .pro3 .pro_ts3{
+        gap: 18px;
+        top: -165px;
+        width: 240px;
+ 
+     }
+
+    .container .footer img{
+        left: 800px;
+        width: 30%;
+        height: 60%;
+
+    }
+
+
+}
+
+
+@media screen and (min-width:1220px) and (max-width:1320px){
+    .container .header .nav{
+        left: 280px;
+    }
+
+    .container .middle1 img{
+        left: 850px;
+        height: 350px;
+        width: 360px;
+    }
+    .container .middle2 .rect{
+        left: 100px;
+        width: 1100px;
+    }
+
+    .container .middle2 .sc1{
+        left: 280px;
+    }
+    .container .middle2 .sc11{
+        top: 1%;
+        left: 160px;
+    }
+
+    .container .middle2 .sc2{
+        left: 685px;
+    }
+    .container .middle2 .sc21{
+        left: 560px;
+        top: 17%;
+    }
+
+    .container .middle2 .sc3{
+        left:   1090px;
+    }
+    .container .middle2 .sc31{
+        left: 960px;
+        top: -53%;
+    }
+
+    .container .middle3 .slider{
+        left: 90px;
+        width: 1070px;
+    }
+
+    .container .middle3 .slider2{
+        left: 100px;
+        width: 1070px;
+    }
+
+    .container .middle4 img{
+        left: 100px;
+        height: 350px ;
+        width: 350px;
+    }
+
+    .container .middle4 .timeline{
+        left: 500px;
+        top: -22%;
+    }
+
+    .container .middle5 .project0{
+        gap: 5px;
+    }
+    .container .middle5 .project{
+        gap: 5px;
+    }
+
+    .container .middle5 .project0 .pro0{
+        width: 515px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1{
+        width: 515px;
+        height: 330px;
+    }
+
+
+    .container .middle5 .project .pro2{
+        width: 515px;
+        height: 330px;
+    }
+
+    .container .middle5 .project .pro3{
+        width: 515px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro0 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro1 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro0 .pro_ts0{
+       top: -120px;
+        width: 240px;
+
+    }
+
+    .container .middle5 .project .pro2 h6{
+        font-size: 17.5px;
+    }
+
+    .container .middle5 .project .pro2 .pro_ts2{
+        top: -165px;
+         width: 240px;
+ 
+     }
+
+     .container .middle5 .project .pro3 h6{
+        font-size: 19px;
+    }
+
+    .container .middle5 .project .pro3 .pro_ts3{
+        gap: 18px;
+        top: -155px;
+        width: 230px;
+ 
+     }
+
+    .container .footer img{
+        left: 800px;
+        width: 30%;
+        height: 60%;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) and (max-width:1220px){
+    .container .header .nav{
+        left: 80px;
+    }
+
+    .container .middle1 img{
+        /* display: none; */
+        /* border-radius: 0%; */
+        left: 850px;
+        height: 350px;
+        width: 360px;
+    }
+    .container .middle2 .rect{
+        left: 100px;
+        width: 1100px;
+    }
+
+    .container .middle2 .sc1{
+        left: 280px;
+    }
+    .container .middle2 .sc11{
+        top: 1%;
+        left: 160px;
+    }
+
+    .container .middle2 .sc2{
+        left: 685px;
+    }
+    .container .middle2 .sc21{
+        left: 560px;
+        top: 17%;
+    }
+
+    .container .middle2 .sc3{
+        left:   1090px;
+    }
+    .container .middle2 .sc31{
+        left: 960px;
+        top: -53%;
+    }
+
+    .container .middle3 .slider{
+        left: 90px;
+        width: 1070px;
+    }
+
+    .container .middle3 .slider2{
+        left: 100px;
+        width: 1070px;
+    }
+
+    .container .middle4 img{
+        left: 100px;
+        height: 350px ;
+        width: 350px;
+    }
+
+    .container .middle4 .timeline{
+        left: 500px;
+        top: -22%;
+    }
+
+    .container .middle5 .project0{
+        gap: 5px;
+    }
+    .container .middle5 .project{
+        gap: 5px;
+    }
+
+    .container .middle5 .project0 .pro0{
+        width: 515px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1{
+        width: 515px;
+        height: 330px;
+    }
+
+
+    .container .middle5 .project .pro2{
+        width: 515px;
+        height: 330px;
+    }
+
+    .container .middle5 .project .pro3{
+        width: 515px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro0 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro1 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro0 .pro_ts0{
+       top: -120px;
+        width: 240px;
+
+    }
+
+    .container .middle5 .project .pro2 h6{
+        font-size: 17.5px;
+    }
+
+    .container .middle5 .project .pro2 .pro_ts2{
+        top: -165px;
+         width: 240px;
+ 
+     }
+
+     .container .middle5 .project .pro3 h6{
+        font-size: 19px;
+    }
+
+    .container .middle5 .project .pro3 .pro_ts3{
+        gap: 18px;
+        top: -155px;
+        width: 230px;
+ 
+     }
+
+    .container .footer img{
+        left: 800px;
+        width: 30%;
+        height: 60%;
+
+    }
+
+
+}
