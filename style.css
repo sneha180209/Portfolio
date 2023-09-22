@@ -1824,7 +1824,17 @@
     text-align: left;
     letter-spacing: 3px;
 }
-
+/* .container .middle5 .projectslide0{
+    position: relative;
+    top: 15%;
+    left: 100px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 30px;
+    background: #240035;
+    overflow: hidden;
+    transition: height 0.5s ease;
+} */
 .container .middle5 .project0{
     position: relative ;
     display: flex;
@@ -1976,6 +1986,18 @@
     left: 70px;
     border-radius: 30px;
     background: #240035;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.container .middle5 .project0 .pro2{
+    position: relative;
+    top: 10%;
+    width: 590px;
+    height: 330px;
+    left: 70px;
+    border-radius: 30px;
+    background: transparent;
     object-fit: fill;
     overflow: hidden;
 }
@@ -2246,7 +2268,17 @@
     object-fit: fill;
     overflow: hidden;
 }
-
+.container .middle5 .project .pro4{
+    position: relative;
+    top: 10%;
+    width: 590px;
+    height: 330px;
+    left: 70px;
+    border-radius: 30px;
+    background: transparent;
+    object-fit: fill;
+    overflow: hidden;
+}
 .container .middle5 .project .pro3 img{
     position: relative;
     width: 650px;
@@ -2860,95 +2892,132 @@
 
 }
 
-@media screen and (min-width: 1000px) and (max-width:1220px){
+@media screen and (min-width: 1130px) and (max-width:1220px){
     .container .header .nav{
-        left: 80px;
+        left: 170px;
     }
 
     .container .middle1 img{
-        /* display: none; */
-        /* border-radius: 0%; */
-        left: 850px;
+        left: 750px;
         height: 350px;
         width: 360px;
     }
+
+    .container .middle1 h1{
+        font-size: 3.5rem;
+        top: -1px;
+    }
+
+    .container .middle1 h1 .auto-type{
+        font-size: 3.5rem;
+    }
+
+    .container .middle1 p{
+        font-size: 1rem;
+        top: 0px;
+    }
+
+    .container .middle1 .btn{
+        font-size: 1.5rem;
+        top: 0px;
+    }
+
+    .container .middle1 .btnarr1{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
+    .container .middle1 .btns{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
     .container .middle2 .rect{
         left: 100px;
-        width: 1100px;
+        width: 950px;
     }
 
     .container .middle2 .sc1{
-        left: 280px;
+        left: 240px;
     }
     .container .middle2 .sc11{
         top: 1%;
-        left: 160px;
+        left: 120px;
     }
 
     .container .middle2 .sc2{
-        left: 685px;
+        left: 595px;
     }
     .container .middle2 .sc21{
-        left: 560px;
+        left: 470px;
         top: 17%;
     }
 
     .container .middle2 .sc3{
-        left:   1090px;
+        left: 920px;
     }
     .container .middle2 .sc31{
-        left: 960px;
+        left: 800px;
         top: -53%;
     }
 
     .container .middle3 .slider{
         left: 90px;
-        width: 1070px;
+        width: 970px;
     }
 
     .container .middle3 .slider2{
         left: 100px;
-        width: 1070px;
+        width: 970px;
     }
 
     .container .middle4 img{
         left: 100px;
-        height: 350px ;
+        height: 350px;
         width: 350px;
     }
 
     .container .middle4 .timeline{
-        left: 500px;
+        left: 470px;
         top: -22%;
+        width: 600px;
+    
+    }
+
+    .container .middle4 .timeline .work1{
+        width: 400px;
     }
 
     .container .middle5 .project0{
         gap: 5px;
+        width: 100%;
+        /* overflow-x: auto;  */
+
     }
-    .container .middle5 .project{
-        gap: 5px;
-    }
+    
 
     .container .middle5 .project0 .pro0{
+        width: 415px;
+        height: 330px;
+        
+    }
+
+    .container .middle5 .project0 .pro0:hover{
         width: 515px;
         height: 330px;
     }
 
     .container .middle5 .project0 .pro1{
+        width: 415px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1:hover{
         width: 515px;
         height: 330px;
     }
 
-
-    .container .middle5 .project .pro2{
-        width: 515px;
-        height: 330px;
-    }
-
-    .container .middle5 .project .pro3{
-        width: 515px;
-        height: 330px;
-    }
+    
 
     .container .middle5 .project0 .pro0 h6{
         font-size: 20.5px;
@@ -2964,6 +3033,25 @@
 
     }
 
+    .container .middle5 .project{
+        gap: 15px;
+        width: 1700px;
+        overflow-x: auto;
+
+    }
+
+    .container .middle5 .project .pro2{
+        width: 415px;
+        height: 330px;
+    }
+
+    .container .middle5 .project .pro2:hover{
+        width: 515px;
+        height: 330px;
+    }
+    
+
+
     .container .middle5 .project .pro2 h6{
         font-size: 17.5px;
     }
@@ -2973,6 +3061,17 @@
          width: 240px;
  
      }
+
+     .container .middle5 .project .pro3{
+        width: 415px;
+        height: 330px;
+    }
+    .container .middle5 .project .pro3:hover{
+        width: 515px;
+        height: 330px;
+    }
+
+
 
      .container .middle5 .project .pro3 h6{
         font-size: 19px;
@@ -2985,12 +3084,245 @@
  
      }
 
+     .container .footer h2{
+        font-size: 2.0rem;
+     }
+
+    .container .footer p{
+        font-size: 1.1rem;
+    }
+
     .container .footer img{
-        left: 800px;
-        width: 30%;
+        left: 700px;
+        width: 40%;
         height: 60%;
 
     }
 
 
 }
+
+@media screen and (min-width: 234px) and (max-width:1130px){
+    .container .header .nav{
+        left: 170px;
+        display: none;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        top: 16px;
+        left: 450px;
+        width: 30px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+        /* background: #eca2ff; */
+    }
+    
+    .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .container .middle1 img{
+        display: none;
+    }
+
+    .container .middle1 h1{
+        font-size: 3.5rem;
+        top: -1px;
+    }
+
+    .container .middle1 h1 .auto-type{
+        font-size: 3.5rem;
+    }
+
+    .container .middle1 p{
+        font-size: 1rem;
+        top: 0px;
+    }
+
+    .container .middle1 .btn{
+        font-size: 1.5rem;
+        top: 0px;
+    }
+
+    .container .middle1 .btnarr1{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
+    .container .middle1 .btns{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
+    .container .middle2 .rect{
+        left: 100px;
+        width: 950px;
+    }
+
+    .container .middle2 .sc1{
+        left: 240px;
+    }
+    .container .middle2 .sc11{
+        top: 1%;
+        left: 120px;
+    }
+
+    .container .middle2 .sc2{
+        left: 595px;
+    }
+    .container .middle2 .sc21{
+        left: 470px;
+        top: 17%;
+    }
+
+    .container .middle2 .sc3{
+        left: 920px;
+    }
+    .container .middle2 .sc31{
+        left: 800px;
+        top: -53%;
+    }
+
+    .container .middle3 .slider{
+        left: 90px;
+        width: 970px;
+    }
+
+    .container .middle3 .slider2{
+        left: 100px;
+        width: 970px;
+    }
+
+    .container .middle4 img{
+        display:none;
+    }
+
+    .container .middle4 .timeline{
+        left: 105px;
+        top: 10%;
+        width: 600px;
+    
+    }
+
+    .container .middle4 .timeline .work1{
+        width: 400px;
+    }
+
+    .container .middle5 .project0{
+        gap: 5px;
+        width: 100%;
+        /* overflow-x: auto;  */
+
+    }
+    
+
+    .container .middle5 .project0 .pro0{
+        width: 415px;
+        height: 330px;
+        
+    }
+
+    .container .middle5 .project0 .pro0:hover{
+        width: 515px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1{
+        width: 415px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1:hover{
+        width: 515px;
+        height: 330px;
+    }
+
+    
+
+    .container .middle5 .project0 .pro0 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro1 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro0 .pro_ts0{
+       top: -120px;
+        width: 240px;
+
+    }
+
+    .container .middle5 .project{
+        gap: 15px;
+        width: 1700px;
+        overflow-x: auto;
+
+    }
+
+    .container .middle5 .project .pro2{
+        width: 415px;
+        height: 330px;
+    }
+
+    .container .middle5 .project .pro2:hover{
+        width: 515px;
+        height: 330px;
+    }
+    
+
+
+    .container .middle5 .project .pro2 h6{
+        font-size: 17.5px;
+    }
+
+    .container .middle5 .project .pro2 .pro_ts2{
+        top: -165px;
+         width: 240px;
+ 
+     }
+
+     .container .middle5 .project .pro3{
+        width: 415px;
+        height: 330px;
+    }
+    .container .middle5 .project .pro3:hover{
+        width: 515px;
+        height: 330px;
+    }
+
+
+
+     .container .middle5 .project .pro3 h6{
+        font-size: 19px;
+    }
+
+    .container .middle5 .project .pro3 .pro_ts3{
+        gap: 18px;
+        top: -155px;
+        width: 230px;
+ 
+     }
+
+     .container .footer h2{
+        font-size: 2.0rem;
+     }
+
+    .container .footer p{
+        font-size: 1.1rem;
+    }
+
+    .container .footer img{
+        display: none;
+
+    }
+
+
+}
+
