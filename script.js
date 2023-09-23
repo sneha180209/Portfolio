@@ -6,6 +6,23 @@ var typed=new Typed(".auto-type",{
 }
 )
 
+function menu() {
+    var m1=document.querySelector(".menu1");
+    var m2=document.querySelector(".menu2");
+    var m3=document.querySelector(".menu3");
+    if(m1.hasAttribute("hidden") && m2.hasAttribute("hidden") && m3.hasAttribute("hidden"))
+    {
+        m1.removeAttribute("hidden");
+        m2.removeAttribute("hidden");
+        m3.removeAttribute("hidden");
+
+    }
+    else{
+        m1.setAttribute("hidden",true);
+        m2.setAttribute("hidden",true);
+        m3.setAttribute("hidden",true);
+    }
+}
 
 let e1 = document.querySelector(".btnarr");
 let e0 = document.querySelector(".btnarr1");

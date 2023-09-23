@@ -234,7 +234,7 @@
     border: 0.5px solid #29082e;
     background: #29082e;
     width: fit-content;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     
 }
 
@@ -3018,7 +3018,6 @@
     }
 
     
-
     .container .middle5 .project0 .pro0 h6{
         font-size: 20.5px;
     }
@@ -3049,8 +3048,6 @@
         width: 515px;
         height: 330px;
     }
-    
-
 
     .container .middle5 .project .pro2 h6{
         font-size: 17.5px;
@@ -3070,8 +3067,6 @@
         width: 515px;
         height: 330px;
     }
-
-
 
      .container .middle5 .project .pro3 h6{
         font-size: 19px;
@@ -3108,6 +3103,94 @@
         display: none;
     }
 
+    .container .header .menu{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 300px;
+        top: 8px;
+    }
+
+    .container .header .menu .menu1, .menu2, .menu3{
+        flex: 1; 
+        margin: 15px;
+        padding: 5px; 
+        cursor: pointer;
+        width: 90px;
+
+    }
+    .menu1, .menu2, .menu3 {
+        cursor: pointer;
+        /* opacity: 0; Initially hide the items */
+        /* transform: translateX(100%); Move items out of view to the right */
+        animation: slide-in 0.5s ease forwards; /* Animation definition */
+        /* animation: slide-out 0.5s ease forwards; */
+    }
+    
+    @keyframes slide-in {
+        to {
+            opacity: 1; /* Make the items visible */
+            transform: translateX(0); /* Slide items in from right to left */
+        }
+        from{
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes slide-out {
+        from {
+            opacity: 1; /* Make the items visible */
+            transform: translateX(0); /* Slide items in from right to left */
+        }
+        to{
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
+
+   
+/* 
+    .container .header .menu .menu1,
+    .container .header .menu .menu2,
+    .container .header .menu .menu3{
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+    }
+
+    @keyframes si {
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+          
+    }
+
+    @keyframes so{
+        from{
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateX(100%);
+        }
+    }
+
+    .container .header .menu .menu1 .slide-in, 
+    .container .header .menu .menu2 .slide-in,
+    .container .header .menu .menu3 .slide-in{
+       animation-name: si;
+    }
+
+    .container .header .menu .menu1 .slide-out,
+    .container .header .menu .menu2 .slide-out,
+    .container .header .menu .menu3 .slide-out{
+        animation-name: so;
+    } */
+
+    
     .hamburger-menu {
         position: absolute;
         top: 16px;

@@ -16,13 +16,29 @@
 <body>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <div class="container">
-        <div class="header">
+        <div  class="header">
             <img src="logo2.png">
             <div class="hamburger-menu" onclick="menu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <!-- Menu -->
+            <div class="menu" hidden>
+                <div class="menu1" hidden>
+                    <div onclick="scrollToSection1()">About</div><br>
+                    <div onclick="scrollToSection2()">Education</div>
+                </div>
+                <div class="menu2" hidden>
+                    <div onclick="scrollToSection3()">Skills</div><br>
+                    <div onclick="scrollToSection4()">Experience</div>
+                </div>
+                <div class="menu3" hidden>
+                    <div onclick="scrollToSection5()">Projects</div><br>
+                    <div onclick="scrollToSection6()">Contact</div>
+                </div>
+            </div>
+
             <div class="nav about" onclick="scrollToSection1()">About</div>
             <div class="nav education" onclick="scrollToSection2()">Education</div>
             <div class="nav skills" onclick="scrollToSection3()">Skills</div>
@@ -264,7 +280,6 @@
             <div class="line"></div>
             <p class="mid5_para">Things I've worked on</p>
             <h2 class="head0">Latest</h2>
-            <!-- <div class="projectslide0"> -->
                 <div class="project0">
                     <div class="pro0">
                         <h3>CVRS</h3>
@@ -287,11 +302,7 @@
                             <p class="pts2">CSS</p>
                             <p class="pts3">JavaScript</p>
                         </div>
-                    </div>
-                    <!-- <div class="pro2"></div> -->
-                <!-- </div> -->
-
-                <!-- <div class="pro2"></div> -->
+                    </div>      
             </div>
 
             <h2 class="head1">Earlier</h2>
@@ -323,8 +334,6 @@
                         <p class="pts8">Android Studio</p>
                     </div>
                 </div>
-
-                <!-- <div class="pro4"></div> -->
             </div>   
         </div>
 
