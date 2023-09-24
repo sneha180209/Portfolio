@@ -1911,7 +1911,7 @@
 
 .container .middle5 .project0 .pro0 h6{
     position: absolute;
-    top: 7%;;
+    top: 7%;
     left: 330px;
     font-family: 'Poppins';
     font-style:normal;
@@ -3117,78 +3117,46 @@
         padding: 5px; 
         cursor: pointer;
         width: 90px;
-
-    }
-    .menu1, .menu2, .menu3 {
-        cursor: pointer;
-        /* opacity: 0; Initially hide the items */
-        /* transform: translateX(100%); Move items out of view to the right */
-        animation: slide-in 0.5s ease forwards; /* Animation definition */
-        /* animation: slide-out 0.5s ease forwards; */
-    }
-    
-    @keyframes slide-in {
-        to {
-            opacity: 1; /* Make the items visible */
-            transform: translateX(0); /* Slide items in from right to left */
-        }
-        from{
-            opacity: 0;
-            transform: translateX(100%);
-        }
-    }
-
-    @keyframes slide-out {
-        from {
-            opacity: 1; /* Make the items visible */
-            transform: translateX(0); /* Slide items in from right to left */
-        }
-        to{
-            opacity: 0;
-            transform: translateX(100%);
-        }
-    }
-
-   
-/* 
-    .container .header .menu .menu1,
-    .container .header .menu .menu2,
-    .container .header .menu .menu3{
         animation-duration: 0.5s;
         animation-timing-function: ease-in-out;
-        animation-fill-mode: backwards;
+        animation-fill-mode: forwards;
+
+    }
+    .menu1.slide-in, 
+    .menu2.slide-in, 
+    .menu3.slide-in {
+        cursor: pointer;
+        animation: si 0.5s ease-in forwards; 
+        transform: translateX(-20%);
     }
 
+    .menu1.slide-out, 
+    .menu2.slide-out, 
+    .menu3.slide-out {
+        cursor: pointer;
+        animation: so 0.5s ease-out forwards; 
+        transform: translateX(0);
+    }
+
+    
     @keyframes si {
-        from{
-            transform: translateX(-100%);
+        from {
+            transform: translateX(-20%);
+        } 
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes so {
+        from {
+            transform: translateX(0); 
         }
         to{
-            transform: translateX(0%);
-        }
-          
-    }
-
-    @keyframes so{
-        from{
-            transform: translateX(0%);
-        }
-        to{
-            transform: translateX(100%);
+            transform: translateX(-20%);
         }
     }
 
-    .container .header .menu .menu1 .slide-in, 
-    .container .header .menu .menu2 .slide-in,
-    .container .header .menu .menu3 .slide-in{
-       animation-name: si;
-    }
-
-    .container .header .menu .menu1 .slide-out,
-    .container .header .menu .menu2 .slide-out,
-    .container .header .menu .menu3 .slide-out{
-        animation-name: so;
-    } */
 
     
     .hamburger-menu {
@@ -3245,41 +3213,41 @@
 
     .container .middle2 .rect{
         left: 100px;
-        width: 950px;
+        width: 650px;
     }
 
     .container .middle2 .sc1{
-        left: 240px;
+        left: 220px;
     }
     .container .middle2 .sc11{
         top: 1%;
-        left: 120px;
+        left: 90px;
     }
 
     .container .middle2 .sc2{
-        left: 595px;
+        left: 430px;
     }
     .container .middle2 .sc21{
-        left: 470px;
+        left: 307px;
         top: 17%;
     }
 
     .container .middle2 .sc3{
-        left: 920px;
+        left: 620px;
     }
     .container .middle2 .sc31{
-        left: 800px;
+        left: 500px;
         top: -53%;
     }
 
     .container .middle3 .slider{
         left: 90px;
-        width: 970px;
+        width: 660px;
     }
 
     .container .middle3 .slider2{
         left: 100px;
-        width: 970px;
+        width: 660px;
     }
 
     .container .middle4 img{
@@ -3300,29 +3268,92 @@
     .container .middle5 .project0{
         gap: 5px;
         width: 100%;
-        /* overflow-x: auto;  */
 
     }
     
 
     .container .middle5 .project0 .pro0{
-        width: 415px;
+        width: 255px;
         height: 330px;
+    }
+
+    .container .middle5 .project0 .pro0:hover img, 
+    .container .middle5 .project0 .pro0:hover h3,
+    .container .middle5 .project0 .pro0:hover .p1{
+        display: none;
+    }
+
+    @keyframes h {
+        from{
+            transform: translateX(30%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+    .container .middle5 .project0 .pro0:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
         
+    }
+    
+    .container .middle5 .project0 .pro0:hover .pro_ts0{
+        visibility: visible;
+        flex-wrap: nowrap;
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts1,
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts2 {
+        left: 15px;
+        height: 30px;
+        /* top: 50px; */
     }
 
     .container .middle5 .project0 .pro0:hover{
-        width: 515px;
+        width: 315px;
         height: 330px;
     }
 
     .container .middle5 .project0 .pro1{
-        width: 415px;
+        width: 255px;
         height: 330px;
     }
 
+    .container .middle5 .project0 .pro1:hover img,
+    .container .middle5 .project0 .pro1:hover h3,
+    .container .middle5 .project0 .pro1:hover .p2{
+        display: none;
+    }
+
+    .container .middle5 .project0 .pro1:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1{
+        visibility: visible;
+        flex-wrap: nowrap;
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts1,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts2,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts3 {
+        left: 15px;
+        height: 30px;
+    }   
+
     .container .middle5 .project0 .pro1:hover{
-        width: 515px;
+        width: 315px;
         height: 330px;
     }
 
@@ -3331,6 +3362,9 @@
     .container .middle5 .project0 .pro0 h6{
         font-size: 20.5px;
     }
+
+   
+
 
     .container .middle5 .project0 .pro1 h6{
         font-size: 20.5px;
@@ -3348,18 +3382,54 @@
         overflow-x: auto;
 
     }
+    
 
     .container .middle5 .project .pro2{
-        width: 415px;
+        width: 255px;
         height: 330px;
     }
 
+
+    
+    .container .middle5 .project .pro2:hover img,
+    .container .middle5 .project .pro2:hover h3,
+    .container .middle5 .project .pro2:hover .p3{
+        display: none;
+    }
+
+    .container .middle5 .project .pro2:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2{
+        visibility: visible;
+        /* flex-wrap: nowrap; */
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts3,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts4,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts5 {
+        left: 15px;
+        height: 30px;
+    }   
+
     .container .middle5 .project .pro2:hover{
-        width: 515px;
+        width: 315px;
+        height: 330px;
+    }
+
+
+    .container .middle5 .project .pro2:hover{
+        width: 315px;
         height: 330px;
     }
     
-
 
     .container .middle5 .project .pro2 h6{
         font-size: 17.5px;
@@ -3372,11 +3442,43 @@
      }
 
      .container .middle5 .project .pro3{
-        width: 415px;
+        width: 255px;
         height: 330px;
     }
+
+ 
+    .container .middle5 .project .pro3:hover img,
+    .container .middle5 .project .pro3:hover h3,
+    .container .middle5 .project .pro3:hover .p4{
+        display: none;
+    }
+
+    .container .middle5 .project .pro3:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3{
+        visibility: visible;
+        /* flex-wrap: nowrap; */
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts6,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts7,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts8,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts9,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts10 {
+        left: 15px;
+        height: 30px;
+    }   
+
     .container .middle5 .project .pro3:hover{
-        width: 515px;
+        width: 315px;
         height: 330px;
     }
 
@@ -3401,10 +3503,20 @@
         font-size: 1.1rem;
     }
 
-    .container .footer img{
+    .container .footer .f1{
         display: none;
 
     }
+
+    .container .footer .last img{
+        left: 750px;
+    }
+
+    .container .footer .last p{
+        left: 200px;
+    }
+
+    
 
 
 }

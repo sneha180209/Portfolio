@@ -15,12 +15,27 @@ function menu() {
         m1.removeAttribute("hidden");
         m2.removeAttribute("hidden");
         m3.removeAttribute("hidden");
+        m1.classList.add("slide-out");
+        m2.classList.add("slide-out");
+        m3.classList.add("slide-out");
+        m1.classList.remove("slide-in");
+        m2.classList.remove("slide-in");
+        m3.classList.remove("slide-in");
+        
 
     }
     else{
         m1.setAttribute("hidden",true);
         m2.setAttribute("hidden",true);
         m3.setAttribute("hidden",true);
+        m1.classList.add("slide-in");
+        m2.classList.add("slide-in");
+        m3.classList.add("slide-in");
+        m1.classList.remove("slide-out");
+        m2.classList.remove("slide-out");
+        m3.classList.remove("slide-out");
+       
+        
     }
 }
 
