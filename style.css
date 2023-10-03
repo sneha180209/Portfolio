@@ -3097,10 +3097,17 @@
 
 }
 
-@media screen and (min-width: 234px) and (max-width:1130px){
+
+@media screen and (min-width: 900px) and (max-width:1130px){
     .container .header .nav{
         left: 170px;
         display: none;
+        
+    }
+
+    .container .header .hamburger-menu{
+        /* position: absolute; */
+        left: 400px;
     }
 
     .container .header .menu{
@@ -3117,22 +3124,22 @@
         padding: 5px; 
         cursor: pointer;
         width: 90px;
-        animation-duration: 0.5s;
+        /* animation-duration: 0.5s;
         animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards; */
 
     }
-    .menu1.slide-in, 
-    .menu2.slide-in, 
-    .menu3.slide-in {
+    .menu1.slidein, 
+    .menu2.slidein, 
+    .menu3.slidein {
         cursor: pointer;
         animation: si 0.5s ease-in forwards; 
         transform: translateX(-20%);
     }
 
-    .menu1.slide-out, 
-    .menu2.slide-out, 
-    .menu3.slide-out {
+    .menu1.slideout, 
+    .menu2.slideout, 
+    .menu3.slideout {
         cursor: pointer;
         animation: so 0.5s ease-out forwards; 
         transform: translateX(0);
@@ -3144,13 +3151,13 @@
             transform: translateX(-20%);
         } 
         to{
-            transform: translateX(0);
+            transform: translateX(100%);
         }
     }
 
     @keyframes so {
         from {
-            transform: translateX(0); 
+            transform: translateX(100%); 
         }
         to{
             transform: translateX(-20%);
@@ -3204,6 +3211,875 @@
     .container .middle1 .btnarr1{
         font-size: 1.5rem;
         top: -53px;
+        background: #000000;
+    }
+
+    .container .middle1 .btns{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
+    .container .middle2 .rect{
+        left: 100px;
+        width: 650px;
+    }
+
+    .container .middle2 .sc1{
+        left: 200px;
+        top: 35.5%;
+    }
+    .container .middle2 .sc11{
+        top: 3%;
+        left: 80px;
+    }
+
+    .container .middle2 .sc2{
+        left: 450px;
+        top: 190px;
+    }
+    .container .middle2 .sc21{
+        left: 327px;
+        top: 15%;
+    }
+
+    .container .middle2 .sc3{
+        left: 659px;
+        top: -220px;
+    }
+    .container .middle2 .sc31{
+        left: 530px;
+        top: -51%;
+    }
+
+    .container .middle3 .slider{
+        left: 90px;
+        width: 660px;
+    }
+
+    .container .middle3 .slider2{
+        left: 100px;
+        width: 660px;
+    }
+
+    .container .middle4 img{
+        display:none;
+    }
+
+    .container .middle4 .timeline{
+        left: 105px;
+        top: 10%;
+        width: 600px;
+    
+    }
+
+    .container .middle4 .timeline .work1{
+        width: 400px;
+    }
+    .container .middle5 .project0{
+        gap: 5px;
+        width: 100%;
+
+    }
+    
+
+    .container .middle5 .project0 .pro0{
+        width: 255px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro0:hover img, 
+    .container .middle5 .project0 .pro0:hover h3,
+    .container .middle5 .project0 .pro0:hover .p1{
+        display: none;
+    }
+
+    @keyframes h {
+        from{
+            transform: translateX(30%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+    .container .middle5 .project0 .pro0:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+    
+    .container .middle5 .project0 .pro0:hover .pro_ts0{
+        visibility: visible;
+        flex-wrap: nowrap;
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts1,
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts2 {
+        left: 15px;
+        height: 30px;
+        /* top: 50px; */
+    }
+
+    .container .middle5 .project0 .pro0:hover{
+        width: 315px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1{
+        width: 255px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1:hover img,
+    .container .middle5 .project0 .pro1:hover h3,
+    .container .middle5 .project0 .pro1:hover .p2{
+        display: none;
+    }
+
+    .container .middle5 .project0 .pro1:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1{
+        visibility: visible;
+        flex-wrap: nowrap;
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts1,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts2,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts3 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project0 .pro1:hover{
+        width: 315px;
+        height: 330px;
+    }
+
+    
+
+    .container .middle5 .project0 .pro0 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro1 h3{
+        font-size: 38px;
+        top: 100px;
+    }
+
+   
+
+
+    .container .middle5 .project0 .pro1 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro0 .pro_ts0{
+       top: -120px;
+        width: 240px;
+
+    }
+
+    .container .middle5 .project{
+        gap: 15px;
+        width: 1700px;
+        overflow-x: auto;
+
+    }
+    
+
+    .container .middle5 .project .pro2{
+        width: 255px;
+        height: 330px;
+    }
+
+
+    
+    .container .middle5 .project .pro2:hover img,
+    .container .middle5 .project .pro2:hover h3,
+    .container .middle5 .project .pro2:hover .p3{
+        display: none;
+    }
+
+    .container .middle5 .project .pro2:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2{
+        visibility: visible;
+        /* flex-wrap: nowrap; */
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts3,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts4,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts5 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project .pro2:hover{
+        width: 315px;
+        height: 330px;
+    }
+
+
+    .container .middle5 .project .pro2:hover{
+        width: 300px;
+        height: 330px;
+    }
+    
+
+    .container .middle5 .project .pro2 h6{
+        font-size: 17.5px;
+    }
+
+    .container .middle5 .project .pro2 .pro_ts2{
+        top: -165px;
+         width: 240px;
+ 
+     }
+
+     .container .middle5 .project .pro3{
+        width: 255px;
+        height: 330px;
+    }
+
+ 
+    .container .middle5 .project .pro3:hover img,
+    .container .middle5 .project .pro3:hover h3,
+    .container .middle5 .project .pro3:hover .p4{
+        display: none;
+    }
+
+    .container .middle5 .project .pro3:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3{
+        visibility: visible;
+        /* flex-wrap: nowrap; */
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts6,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts7,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts8,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts9,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts10 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project .pro3:hover{
+        width: 300px;
+        height: 330px;
+    }
+
+
+     .container .middle5 .project .pro3 h6{
+        font-size: 19px;
+    }
+
+    .container .middle5 .project .pro3 .pro_ts3{
+        gap: 18px;
+        top: -155px;
+        width: 230px;
+ 
+     }
+     .container .footer h2{
+        font-size: 2.0rem;
+     }
+
+    .container .footer p{
+        font-size: 1.1rem;
+    }
+
+    .container .footer .f1{
+        display: none;
+
+    }
+
+    .container .footer .last img{
+        left: 740px;
+    }
+
+    .container .footer .last p{
+        left: 200px;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) and (max-width:900px){
+    .container .header .nav{
+        left: 170px;
+        display: none;
+    }
+
+    .container .header .hamburger-menu{
+        /* position: absolute; */
+        left: 400px;
+    }
+
+    .container .header .menu{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 300px;
+        top: 8px;
+    }
+
+    .container .header .menu .menu1, .menu2, .menu3{
+        flex: 1; 
+        margin: 15px;
+        padding: 5px; 
+        cursor: pointer;
+        width: 90px;
+        /* animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; */
+
+    }
+    .menu1.slidein, 
+    .menu2.slidein, 
+    .menu3.slidein {
+        cursor: pointer;
+        animation: si 0.5s ease-in forwards; 
+        transform: translateX(-20%);
+    }
+
+    .menu1.slideout, 
+    .menu2.slideout, 
+    .menu3.slideout {
+        cursor: pointer;
+        animation: so 0.5s ease-out forwards; 
+        transform: translateX(0);
+    }
+
+    
+    @keyframes si {
+        from {
+            transform: translateX(-20%);
+        } 
+        to{
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes so {
+        from {
+            transform: translateX(100%); 
+        }
+        to{
+            transform: translateX(-20%);
+        }
+    }
+
+
+    
+    .hamburger-menu {
+        position: absolute;
+        top: 16px;
+        left: 450px;
+        width: 30px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+        /* background: #eca2ff; */
+    }
+    
+    .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .container .middle1 img{
+        display: none;
+    }
+
+    .container .middle1 h1{
+        font-size: 3.5rem;
+        top: -1px;
+    }
+
+    .container .middle1 h1 .auto-type{
+        font-size: 3.5rem;
+    }
+
+    .container .middle1 p{
+        font-size: 1rem;
+        top: 0px;
+    }
+
+    .container .middle1 .btn{
+        font-size: 1.5rem;
+        top: 0px;
+    }
+
+    .container .middle1 .btnarr1{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
+    .container .middle1 .btns{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
+    .container .middle2 .rect{
+        left: 100px;
+        width: 650px;
+    }
+
+    .container .middle2 .sc1{
+        left: 200px;
+        top: 35.5%;
+    }
+    .container .middle2 .sc11{
+        top: 3%;
+        left: 80px;
+    }
+
+    .container .middle2 .sc2{
+        left: 450px;
+        top: 190px;
+    }
+    .container .middle2 .sc21{
+        left: 327px;
+        top: 15%;
+    }
+
+    .container .middle2 .sc3{
+        left: 659px;
+        top: -220px;
+    }
+    .container .middle2 .sc31{
+        left: 530px;
+        top: -51%;
+    }
+
+    .container .middle3 .slider{
+        left: 90px;
+        width: 660px;
+    }
+
+    .container .middle3 .slider2{
+        left: 100px;
+        width: 660px;
+    }
+
+    .container .middle4 img{
+        display:none;
+    }
+
+    .container .middle4 .timeline{
+        left: 105px;
+        top: 10%;
+        width: 600px;
+    
+    }
+
+    .container .middle4 .timeline .work1{
+        width: 400px;
+    }
+    .container .middle5 .project0{
+        gap: 5px;
+        width: 100%;
+
+    }
+    
+
+    .container .middle5 .project0 .pro0{
+        width: 255px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro0:hover img, 
+    .container .middle5 .project0 .pro0:hover h3,
+    .container .middle5 .project0 .pro0:hover .p1{
+        display: none;
+    }
+
+    @keyframes h {
+        from{
+            transform: translateX(30%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+    .container .middle5 .project0 .pro0:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+    
+    .container .middle5 .project0 .pro0:hover .pro_ts0{
+        visibility: visible;
+        flex-wrap: nowrap;
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts1,
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts2 {
+        left: 15px;
+        height: 30px;
+        /* top: 50px; */
+    }
+
+    .container .middle5 .project0 .pro0:hover{
+        width: 315px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1{
+        width: 255px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1:hover img,
+    .container .middle5 .project0 .pro1:hover h3,
+    .container .middle5 .project0 .pro1:hover .p2{
+        display: none;
+    }
+
+    .container .middle5 .project0 .pro1:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1{
+        visibility: visible;
+        flex-wrap: nowrap;
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts1,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts2,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts3 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project0 .pro1:hover{
+        width: 315px;
+        height: 330px;
+    }
+
+    
+
+    .container .middle5 .project0 .pro0 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro1 h3{
+        font-size: 38px;
+        top: 100px;
+    }
+
+   
+
+
+    .container .middle5 .project0 .pro1 h6{
+        font-size: 20.5px;
+    }
+
+    .container .middle5 .project0 .pro0 .pro_ts0{
+       top: -120px;
+        width: 240px;
+
+    }
+
+    .container .middle5 .project{
+        gap: 15px;
+        width: 1700px;
+        overflow-x: auto;
+
+    }
+    
+
+    .container .middle5 .project .pro2{
+        width: 255px;
+        height: 330px;
+    }
+
+
+    
+    .container .middle5 .project .pro2:hover img,
+    .container .middle5 .project .pro2:hover h3,
+    .container .middle5 .project .pro2:hover .p3{
+        display: none;
+    }
+
+    .container .middle5 .project .pro2:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2{
+        visibility: visible;
+        /* flex-wrap: nowrap; */
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts3,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts4,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts5 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project .pro2:hover{
+        width: 315px;
+        height: 330px;
+    }
+
+
+    .container .middle5 .project .pro2:hover{
+        width: 300px;
+        height: 330px;
+    }
+    
+
+    .container .middle5 .project .pro2 h6{
+        font-size: 17.5px;
+    }
+
+    .container .middle5 .project .pro2 .pro_ts2{
+        top: -165px;
+         width: 240px;
+ 
+     }
+
+     .container .middle5 .project .pro3{
+        width: 255px;
+        height: 330px;
+    }
+
+ 
+    .container .middle5 .project .pro3:hover img,
+    .container .middle5 .project .pro3:hover h3,
+    .container .middle5 .project .pro3:hover .p4{
+        display: none;
+    }
+
+    .container .middle5 .project .pro3:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3{
+        visibility: visible;
+        /* flex-wrap: nowrap; */
+        top: 200px;
+        left: -8px;
+        width: 300px;
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts6,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts7,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts8,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts9,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts10 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project .pro3:hover{
+        width: 300px;
+        height: 330px;
+    }
+
+
+     .container .middle5 .project .pro3 h6{
+        font-size: 19px;
+    }
+
+    .container .middle5 .project .pro3 .pro_ts3{
+        gap: 18px;
+        top: -155px;
+        width: 230px;
+ 
+     }
+     .container .footer h2{
+        font-size: 2.0rem;
+     }
+
+    .container .footer p{
+        font-size: 1.1rem;
+    }
+
+    .container .footer .f1{
+        display: none;
+
+    }
+
+    .container .footer .last img{
+        left: 740px;
+    }
+
+    .container .footer .last p{
+        left: 200px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 700px) and (max-width:800px){
+    .container .header .nav{
+        left: 170px;
+        display: none;
+    }
+
+    .container .header .menu{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 300px;
+        top: 8px;
+    }
+
+    .container .header .menu .menu1, .menu2, .menu3{
+        flex: 1; 
+        margin: 15px;
+        padding: 5px; 
+        cursor: pointer;
+        width: 90px;
+        /* animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; */
+
+    }
+    .menu1.slidein, 
+    .menu2.slidein, 
+    .menu3.slidein {
+        cursor: pointer;
+        animation: si 0.5s ease-in forwards; 
+        transform: translateX(-20%);
+    }
+
+    .menu1.slideout, 
+    .menu2.slideout, 
+    .menu3.slideout {
+        cursor: pointer;
+        animation: so 0.5s ease-out forwards; 
+        transform: translateX(0);
+    }
+
+    
+    @keyframes si {
+        from {
+            transform: translateX(-20%);
+        } 
+        to{
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes so {
+        from {
+            transform: translateX(100%); 
+        }
+        to{
+            transform: translateX(-20%);
+        }
+    }
+    
+    .hamburger-menu {
+        position: absolute;
+        top: 16px;
+        left: 350px;
+        width: 30px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+        /* background: #eca2ff; */
+    }
+    
+    .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .container .middle1 img{
+        display: none;
+    }
+
+    .container .middle1 h1{
+        font-size: 2rem;
+        top: -1px;
+    }
+
+    .container .middle1 h1 .auto-type{
+        font-size: 2rem;
+    }
+
+    .container .middle1 p{
+        font-size: 0.75rem;
+        top: 0px;
+    }
+
+    .container .middle1 .btn .btnarr{
+        top: 0px;
+        left: -20px;
+    }
+
+
+    .container .middle1 .btn{
+        font-size: 0.5rem;
+        top: 0px;
+        flex-direction: column;
+    }
+
+    .container .middle1 .btnarr1{
+        font-size: 1.5rem;
+        top: -52px;
+        left: 200px;
+        /* background: #011e5b; */
     }
 
     .container .middle1 .btns{
@@ -3363,6 +4239,11 @@
         font-size: 20.5px;
     }
 
+    .container .middle5 .project0 .pro1 h3{
+        font-size: 38px;
+        top: 100px;
+    }
+
    
 
 
@@ -3426,7 +4307,7 @@
 
 
     .container .middle5 .project .pro2:hover{
-        width: 315px;
+        width: 300px;
         height: 330px;
     }
     
@@ -3478,7 +4359,7 @@
     }   
 
     .container .middle5 .project .pro3:hover{
-        width: 315px;
+        width: 300px;
         height: 330px;
     }
 
@@ -3509,7 +4390,7 @@
     }
 
     .container .footer .last img{
-        left: 750px;
+        left: 700px;
     }
 
     .container .footer .last p{
@@ -3521,3 +4402,505 @@
 
 }
 
+
+@media screen and (min-width: 480px) and (max-width:700px){
+    .container .header .nav{
+        left: 170px;
+        display: none;
+    }
+
+    .container .header img{
+        left: -60px;
+        top: 20px;
+    }
+
+    .container .header .menu{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 110px;
+        top: 15px;
+        font-size: 12px;
+    }
+
+    .container .header .menu .menu1, .menu2, .menu3{
+        flex: 1; 
+        margin: 15px;
+        padding: 5px; 
+        cursor: pointer;
+        width: 90px;
+
+    }
+    .menu1.slidein, 
+    .menu2.slidein, 
+    .menu3.slidein {
+        cursor: pointer;
+        animation: si 0.5s ease-in forwards; 
+        transform: translateX(-20%);
+    }
+
+    .menu1.slideout, 
+    .menu2.slideout, 
+    .menu3.slideout {
+        cursor: pointer;
+        animation: so 0.5s ease-out forwards; 
+        transform: translateX(0);
+    }
+
+    
+    @keyframes si {
+        from {
+            transform: translateX(-20%);
+        } 
+        to{
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes so {
+        from {
+            transform: translateX(100%); 
+        }
+        to{
+            transform: translateX(-20%);
+        }
+    }
+
+
+    
+    .hamburger-menu {
+        position: absolute;
+        top: 16px;
+        left: 150px;
+        width: 30px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .container .middle1 img{
+        display: none;
+    }
+
+    .container .middle1 h1{
+        font-size: 1.9rem;
+        top: -1px;
+    }
+
+    .container .middle1 h1 .auto-type{
+        font-size:1.9rem;
+    }
+
+    .container .middle1 p{
+        font-size: 0.565rem;
+        top: 0px;
+    }
+
+    
+
+    .container .middle1 .btn .btnarr{
+        font-size: 0.5rem;
+        top: 0px;
+        left: -30px;
+        height: 35px;
+        width: 75px;
+        
+    }
+
+    
+
+    .container .middle1 .btn{
+        font-size: 0.5rem;
+        top: 0px;
+        flex-direction: column;
+    }
+
+    .container .middle1 .btnarr1{
+        font-size: 1.5rem;
+        top: -50px;
+        left: 180px;
+        /* background: #011e5b; */
+    }
+
+    .container .middle1 .btnarr1 .btn2,
+    .container .middle1 .btnarr1 .btn3,
+    .container .middle1 .btnarr1 .btn4{
+        font-size: 0.5rem;
+        top: 0px;
+        left: 0px;
+        height: 35px;
+        width: 70px;
+    }
+
+    .container .middle1 .btnarr1 .btn2{
+       text-align: left;
+       padding-left: 10px;
+    }
+
+    .container .middle1 .btns{
+        font-size: 1.5rem;
+        top: -53px;
+    }
+
+    .container .middle2 .rect{
+        left: 100px;
+        width: 650px;
+        visibility: hidden;
+    }
+
+    .container .middle2 .sc1{
+        left: 220px;
+        visibility: hidden;
+    }
+    .container .middle2 .sc11{
+        top: 1%;
+        left: 145px;
+    }
+
+    .container .middle2 .sc2{
+        left: 430px;
+        visibility: hidden;
+    }
+    .container .middle2 .sc21{
+        left: 145px;
+        top: 2%;
+    }
+
+    .container .middle2 .sc3{
+        left: 620px;
+        visibility: hidden;
+    }
+    .container .middle2 .sc31{
+        left: 145px;
+        top: 3%;
+    }
+
+
+    .container .middle3 .slider{
+        left: 90px;
+        width: 360px;
+    }
+
+    .container .middle3 .slider2{
+        left: 100px;
+        width: 360px;
+    }
+
+    .container .middle3 h2{
+        font-size: 27px;
+    }
+
+    .container .middle4 .timeline .vline{
+        left: 70px;
+    }
+
+    .container .middle4 .timeline .c1,
+    .container .middle4 .timeline .c2{
+        left: 58px;
+    }
+
+    .container .middle4 .timeline .work1 .ts1{
+        flex-wrap: wrap;
+        top: 14px;
+        gap: 10px;
+       
+    }
+
+    .container .middle4 img{
+        display: none;
+    }
+
+    .container .middle4 .timeline{
+        left: 45px;
+        top: 10%;
+        width: 430px;
+    
+    }
+
+    .container .middle4 .timeline .work1{
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .container .middle4 .timeline .tri1{
+        left: 95px;
+    }
+
+    .container .middle5 .project0{
+        gap: 1px;
+        width: 100%;
+
+    }
+    
+
+    .container .middle5 .project0 .pro0{
+        width: 100px;
+        height: 330px;
+    }
+    
+
+    .container .middle5 .project0 .pro0:hover img, 
+    .container .middle5 .project0 .pro0:hover h3,
+    .container .middle5 .project0 .pro0:hover .p1{
+        display: none;
+    }
+
+    @keyframes h {
+        from{
+            transform: translateX(30%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+    .container .middle5 .project0 .pro0:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+    
+    .container .middle5 .project0 .pro0:hover .pro_ts0{
+        visibility: visible;
+        flex-wrap: wrap;
+        top: 220px;
+        left: -8px;
+        width: 200px;
+    }
+
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts1,
+    .container .middle5 .project0 .pro0:hover .pro_ts0 .pts2 {
+        left: 15px;
+        height: 30px;
+        /* top: 50px; */
+    }
+
+    .container .middle5 .project0 .pro0:hover{
+        width: 215px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro1{
+        width: 100px;
+        height: 330px;
+    }
+
+    .container .middle5 .project0 .pro0 h3,
+    .container .middle5 .project0 .pro0 .p1,
+    .container .middle5 .project0 .pro1 h3,
+    .container .middle5 .project0 .pro1 .p2{
+        visibility: hidden;
+    }
+
+
+    .container .middle5 .project0 .pro1:hover img,
+    .container .middle5 .project0 .pro1:hover h3,
+    .container .middle5 .project0 .pro1:hover .p2{
+        display: none;
+    }
+
+    .container .middle5 .project0 .pro1:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1{
+        visibility: visible;
+        flex-wrap: wrap;
+        top: 220px;
+        left: -8px;
+        width: 200px;
+    }
+
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts1,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts2,
+    .container .middle5 .project0 .pro1:hover .pro_ts1 .pts3 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project0 .pro1:hover{
+        width: 215px;
+        height: 330px;
+    }
+
+    
+
+    .container .middle5 .project0 .pro0 h6{
+        font-size: 18.5px;
+    }
+
+   
+
+
+    .container .middle5 .project0 .pro1 h6{
+        font-size: 18.5px;
+    }
+
+    .container .middle5 .project0 .pro0 .pro_ts0{
+       top: -120px;
+        width: 240px;
+
+    }
+
+    .container .middle5 .project{
+        gap: 15px;
+        width: 1800px;
+        height: 600px;
+        overflow-x: auto;
+
+    }
+    
+
+    .container .middle5 .project .pro2{
+        width: 100px;
+        height: 330px;
+    }
+
+
+    
+    .container .middle5 .project .pro2:hover img,
+    .container .middle5 .project .pro2:hover h3,
+    .container .middle5 .project .pro2:hover .p3{
+        display: none;
+    }
+
+    .container .middle5 .project .pro2:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2{
+        visibility: visible;
+        flex-wrap: wrap;
+        top: 200px;
+        left: -8px;
+        width: 200px;
+    }
+
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts3,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts4,
+    .container .middle5 .project .pro2:hover .pro_ts2 .pts5 {
+        left: 15px;
+        height: 30px;
+    }   
+
+
+    .container .middle5 .project .pro2:hover{
+        width: 215px;
+        height: 360px;
+    }
+    
+
+    .container .middle5 .project .pro2 h6{
+        font-size: 17.5px;
+    }
+
+    .container .middle5 .project .pro2 .pro_ts2{
+        top: -165px;
+        width: 240px;
+ 
+     }
+
+     .container .middle5 .project .pro3{
+        width: 100px;
+        height: 330px;
+    }
+
+ 
+    .container .middle5 .project .pro3:hover img,
+    .container .middle5 .project .pro3:hover h3,
+    .container .middle5 .project .pro3:hover .p4{
+        display: none;
+    }
+
+    .container .middle5 .project .pro3:hover h6{
+        top: 70px;
+        left: 15px;
+        animation: h ease 0.5s forwards;
+        
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3{
+        visibility: visible;
+        flex-wrap: wrap;
+        top: 220px;
+        left: -8px;
+        width: 200px;
+    }
+
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts6,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts7,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts8,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts9,
+    .container .middle5 .project .pro3:hover .pro_ts3 .pts10 {
+        left: 15px;
+        height: 30px;
+    }   
+
+    .container .middle5 .project .pro3:hover{
+        width: 215px;
+        height: 370px;
+    }
+
+
+
+     .container .middle5 .project .pro3 h6{
+        font-size: 19px;
+    }
+
+    .container .middle5 .project .pro3 .pro_ts3{
+        gap: 18px;
+        top: -155px;
+        width: 230px;
+ 
+     }
+
+    .container .middle5 .project .pro2 h3,
+    .container .middle5 .project .pro2 .p3,
+    .container .middle5 .project .pro3 h3,
+    .container .middle5 .project .pro3 .p4{
+        visibility: hidden;
+    }
+
+
+     .container .footer h2{
+        font-size: 2.0rem;
+     }
+
+    .container .footer p{
+        font-size: 15px;
+    }
+
+    .container .footer .f1{
+        display: none;
+
+    }
+
+    .container .footer .last img{
+        left: 450px;
+    }
+
+    .container .footer .last p{
+        left: 160px;
+        font-size: medium;
+    }
+
+    
+
+
+}

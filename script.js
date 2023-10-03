@@ -15,12 +15,12 @@ function menu() {
         m1.removeAttribute("hidden");
         m2.removeAttribute("hidden");
         m3.removeAttribute("hidden");
-        m1.classList.add("slide-out");
-        m2.classList.add("slide-out");
-        m3.classList.add("slide-out");
-        m1.classList.remove("slide-in");
-        m2.classList.remove("slide-in");
-        m3.classList.remove("slide-in");
+        m1.classList.add("slideout");
+        m2.classList.add("slideout");
+        m3.classList.add("slideout");
+        m1.classList.remove("slidein");
+        m2.classList.remove("slidein");
+        m3.classList.remove("slidein");
         
 
     }
@@ -28,12 +28,12 @@ function menu() {
         m1.setAttribute("hidden",true);
         m2.setAttribute("hidden",true);
         m3.setAttribute("hidden",true);
-        m1.classList.add("slide-in");
-        m2.classList.add("slide-in");
-        m3.classList.add("slide-in");
-        m1.classList.remove("slide-out");
-        m2.classList.remove("slide-out");
-        m3.classList.remove("slide-out");
+        m1.classList.add("slidein");
+        m2.classList.add("slidein");
+        m3.classList.add("slidein");
+        m1.classList.remove("slideout");
+        m2.classList.remove("slideout");
+        m3.classList.remove("slideout");
        
         
     }
