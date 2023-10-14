@@ -6,6 +6,8 @@ var typed=new Typed(".auto-type",{
 }
 )
 
+
+
 function menu() {
     var m1=document.querySelector(".menu1");
     var m2=document.querySelector(".menu2");
@@ -74,6 +76,8 @@ function btnarrow() {
       e1.innerHTML = "Tech Links<span class='material-icons'>chevron_left</span>";
     }
   }
+
+  
 }
 
 
