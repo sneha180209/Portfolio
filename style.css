@@ -1753,7 +1753,7 @@
     background: rgba(0, 255, 255, 0.6);
     padding: 10px;
     border-radius: 10px;
-    filter: drop-shadow(5px 5px 10px rgb(1, 122, 141))
+    /* filter: drop-shadow(5px 5px 10px rgb(1, 122, 141)) */
     /* box-shadow:0 0 10px rgb(1, 122, 141);
     -moz-box-shadow: 0 0 10px rgb(1, 122, 141);
     -webkit-box-shadow: 0 0 10px rgb(1, 122, 141);
