@@ -1,1 +1,1 @@
-My portfolio using html, css, javascript. 
+My portfolio using HTML, css, javascript. 
