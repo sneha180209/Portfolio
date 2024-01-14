@@ -1,1 +1,1 @@
-My portfolio using HTML, CSS and JavaScript.
+My portfolio using HTML, CSS and JavaScript. It is responsive.
